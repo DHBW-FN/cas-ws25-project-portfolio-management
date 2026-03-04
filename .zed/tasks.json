@@ -1,0 +1,34 @@
+[
+  {
+    "label": "LaTeX: Build and Open PDF",
+    "command": "sh",
+    "args": ["-c", "make; open dokumentation.pdf"],
+    "cwd": "${ZED_WORKTREE_ROOT}",
+    "reveal": "always",
+    "hide": "never",
+  },
+  {
+    "label": "LaTeX: Build Only",
+    "command": "make",
+    "args": [],
+    "cwd": "${ZED_WORKTREE_ROOT}",
+    "reveal": "always",
+    "hide": "never",
+  },
+  {
+    "label": "LaTeX: Clean Build Files",
+    "command": "make",
+    "args": ["clean"],
+    "cwd": "${ZED_WORKTREE_ROOT}",
+    "reveal": "always",
+    "hide": "never",
+  },
+  {
+    "label": "LaTeX: Quick Cleanup",
+    "command": "make",
+    "args": ["cleanup"],
+    "cwd": "${ZED_WORKTREE_ROOT}",
+    "reveal": "always",
+    "hide": "never",
+  },
+]
