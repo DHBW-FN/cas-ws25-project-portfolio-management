@@ -2,8 +2,8 @@ name: Build paper (LaTeX document)
 
 on:
   push:
+    branches: [main]
   pull_request:
-
   workflow_dispatch:
 
 jobs:
@@ -13,14 +13,14 @@ jobs:
 
     steps:
     - name: Git checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v6
     - name: Compile LaTeX document
-      uses: xu-cheng/latex-action@v2
+      uses: xu-cheng/latex-action@v4
       with:
         root_file: dokumentation.tex
         #working_directory: . #Das sollte nicht nötig sein, wenn die Haupt-Latex-Datei im Hauptordner des Repositorys liegt
     - name: Publish document as artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v7
       with:
         name: documentation-paper
         path: output/dokumentation.pdf
@@ -28,4 +28,4 @@ jobs:
       uses: kolpav/purge-artifacts-action@v1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        expire-in: 0 # Setting this to 0 will delete all artifacts
+        expire-in: 24h
