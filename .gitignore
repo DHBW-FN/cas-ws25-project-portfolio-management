@@ -21,6 +21,8 @@ output/
 *.blg
 *.glg
 *.gls
+*.fls
+*.fdb_latexmk
 
 .vs/*
 
