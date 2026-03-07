@@ -1,43 +1,97 @@
 %!TEX root = ../dokumentation.tex
 
-\chapter{Beispiel Code-schnipsel einbinden}
+\chapter{Projektstakeholder}
 
-%title wird unter dem Bsp. abgedruckt
-%caption wird im Verzeichnis abgedruckt
-%label wird zum referenzieren benutzt, muss einzigartig sein.
+\begin{xltabular}{\textwidth}{@{}XXcc@{}}
+	\caption{Stakeholder Identification and Assessment} \label{tab:stakeholder-id} \\
+	\hline
+	\textbf{Name} & \textbf{Rolle / Funktion} & \textbf{Einfluss (0--10)} & \textbf{Interesse (+1/0/-1)} \\
+	\hline
+	\endfirsthead
 
-\begin{lstlisting}[caption=Code-Beispiel, label=Bsp.1]
-public class HelloWorld {
-	public static void main (String[] args) {
-		// Ausgabe Hello World!
-		System.out.println("Hello World!");
-	}
-}
-\end{lstlisting}
+	\hline
+	\textbf{Name} & \textbf{Rolle / Funktion} & \textbf{Einfluss (0--10)} & \textbf{Interesse (+1/0/-1)} \\
+	\hline
+	\endhead
 
-%language ändert die Sprache. (Wenn nur eine Sprache verwendet wird, kann diese Sprache in einstellungen.tex geändert werden. Standardmäßig Java.)
-\begin{lstlisting}[caption=Python-Code, label=Python-Code, title=Titel des Python-Codes,language=Python]
-def quicksort(liste):
-if len(liste) <= 1:
-	return liste
-pivotelement = liste.pop()
-links = [element for element in liste if element < pivotelement]
-rechts = [element for element in liste if element >= pivotelement]
-return quicksort(links) + [pivotelement] + quicksort(rechts)
-# Quelle: http://de.wikipedia.org/wiki/Python_(Programmiersprache)
-\end{lstlisting}
+	\hline
+	\endfoot
 
-\section{lorem ipsum}
-Looking for the one superhero comic you just have to read. Following the antics and adventures of May Mayday Parker, this Spider-book has everything you could want in a comic--action, laughs, mystery and someone in a Spidey suit. Collects Alias \#1-28, What If. Jessica Jones had Joined the Avengers. In her inaugural arc, Jessicas life immediately becomes expendable when she uncovers the potentially explosive secret of one heros true identity. 
+	Vorstand Personal (CHRO) & Executive Sponsor & 10 & +1 \\
 
-Once upon a time, Jessica Jones was a costumed super-hero, just not a very good one. First, a story where Wolverine and Hulk come together, and then Captain America and Cable meet up. In a city of Marvels, Jessica Jones never found her niche. The classic adventures of Spider-Man from the early days up until the 90s. Looking for the one superhero comic you just have to read.
+	HR Development Leitung & Business Owner & 9 & +1 \\
 
-Meet all of Spideys deadly enemies, from the Green Goblin and Doctor Octopus to Venom and Carnage, plus see Peter Parker fall in love, face tragedy and triumph, and learn that with great power comes great responsibility. In a city of Marvels, Jessica Jones never found her niche. Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Looking for the one superhero comic you just have to read. What do you get when you ask the question, What if Spider-Man had a daughter.
+	IT-Leitung & System Owner & 8 & +1 \\
 
-The classic adventures of Spider-Man from the early days up until the 90s. Amazing Spider-Man is the cornerstone of the Marvel Universe. But will each partner’s combined strength be enough. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Youve found it.
+	Enterprise Architecture & Architektur-Governance & 7 & +1 \\
 
-\section{Verweis auf Code}
-Verweis auf den Code \autoref{Bsp.1}.\\
-und der Python-Code \autoref{Python-Code}.
+	HR Business Partner & Fachliche Stakeholder & 6 & +1 \\
 
-Zweite Erwähnung einer Abkürzung \ac{AGPL} (Erlärung wird nicht mehr angezeigt)
+	Führungskräfte der Fachbereiche & Weiterbildungsgenehmigung & 6 & +1 \\
+
+	Mitarbeitende & Endnutzer der Plattform & 4 & +1 \\
+
+	Betriebsrat & Arbeitnehmervertretung & 7 & 0 \\
+
+	Externer Plattformanbieter & Technologiepartner & 5 & +1 \\
+
+	Projektmanager Lernplattform & Projektleitung & 8 & +1 \\
+
+\end{xltabular}
+
+\begin{xltabular}{\textwidth}{@{}XXX@{}}
+	\caption{Stakeholder Roles, Objectives and Strategies} \label{tab:stakeholder-roles} \\
+	\hline
+	\textbf{Stakeholder} & \textbf{Objective} & \textbf{Strategy} \\
+	\hline
+	\endfirsthead
+
+	\hline
+	\textbf{Stakeholder} & \textbf{Objective} & \textbf{Strategy} \\
+	\hline
+	\endhead
+
+	\hline
+	\endfoot
+
+	Vorstand Personal (CHRO) &
+	Sicherstellung strategischer Ausrichtung und Bereitstellung von Ressourcen &
+	Regelmäßige Management-Updates und Einbindung in zentrale Projektentscheidungen \\
+
+	HR Development Leitung &
+	Definition der Lernstrategie und Anforderungen an die Plattform &
+	Enge Zusammenarbeit bei Anforderungen und Priorisierung \\
+
+	IT-Leitung &
+	Sicherstellung der Integration in bestehende IT-Systeme &
+	Architekturabstimmungen und technische Governance etablieren \\
+
+	Enterprise Architecture &
+	Definition von Architekturstandards und Sicherheitsanforderungen &
+	Architekturreviews und technische Abstimmungsschleifen \\
+
+	HR Business Partner &
+	Sicherstellung der fachlichen Passung zu Weiterbildungsprozessen &
+	Workshops zur Anforderungsvalidierung und Pilotbereiche \\
+
+	Führungskräfte der Fachbereiche &
+	Unterstützung bei Einführung und Nutzung der Plattform &
+	Frühzeitige Einbindung und Schulungsprogramme \\
+
+	Mitarbeitende &
+	Akzeptanz und Nutzung der Lernplattform &
+	Change-Kommunikation, Schulungen und Self-Service-Angebote \\
+
+	Betriebsrat &
+	Sicherstellung der Einhaltung arbeitsrechtlicher Rahmenbedingungen &
+	Frühzeitige Abstimmung zu Datenschutz und Kompetenztracking \\
+
+	Externer Plattformanbieter &
+	Bereitstellung und Betrieb der Plattformlösung &
+	Klare SLA, Projektkoordination und regelmäßige Abstimmungen \\
+
+	Projektmanager Lernplattform &
+	Steuerung des Projekts zur Erreichung des MOV &
+	Koordination aller Stakeholder und transparente Kommunikation \\
+
+\end{xltabular}
