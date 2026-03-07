@@ -2,6 +2,22 @@
 
 \chapter{Projektstakeholder}
 
+Im Rahmen der Projektplanung wurde eine Stakeholderanalyse durchgeführt,
+um alle relevanten Anspruchsgruppen des Projekts zu identifizieren sowie
+deren Einfluss auf das Projekt und deren Interesse am Projekterfolg zu bewerten.
+
+Die Bewertung erfolgt gemäß der Stakeholderanalyse nach Marchewka.
+Der Einfluss wird auf einer Skala von 0 (kein Einfluss) bis 10
+(sehr hoher Einfluss, z.\,B. Möglichkeit zur Projektbeendigung) bewertet.
+Das Interesse wird mit +1 (unterstützend), 0 (neutral) oder -1 (ablehnend)
+klassifiziert.
+
+Die Analyse dient als Grundlage für ein strukturiertes Stakeholdermanagement
+und unterstützt die frühzeitige Identifikation potenzieller Konflikte sowie
+geeigneter Managementstrategien im Projektverlauf.
+
+\section{Stakeholder Identification and Assessment}
+
 \begin{xltabular}{\textwidth}{@{}XXcc@{}}
 	\caption{Stakeholder Identification and Assessment} \label{tab:stakeholder-id} \\
 	\hline
@@ -25,29 +41,36 @@
 
 	Enterprise Architecture & Architektur-Governance & 7 & +1 \\
 
+	Betriebsrat & Arbeitnehmervertretung & 7 & 0 \\
+
+	Datenschutzbeauftragter & Compliance / Datenschutz & 6 & 0 \\
+
 	HR Business Partner & Fachliche Stakeholder & 6 & +1 \\
 
 	Führungskräfte der Fachbereiche & Weiterbildungsgenehmigung & 6 & +1 \\
 
-	Mitarbeitende & Endnutzer der Plattform & 4 & +1 \\
-
-	Betriebsrat & Arbeitnehmervertretung & 7 & 0 \\
+	IT Operations & Betrieb der Plattform & 5 & +1 \\
 
 	Externer Plattformanbieter & Technologiepartner & 5 & +1 \\
+
+	Mitarbeitende & Endnutzer der Plattform & 4 & +1 \\
 
 	Projektmanager Lernplattform & Projektleitung & 8 & +1 \\
 
 \end{xltabular}
 
+
+\section{Stakeholder Management}
+
 \begin{xltabular}{\textwidth}{@{}XXX@{}}
-	\caption{Stakeholder Roles, Objectives and Strategies} \label{tab:stakeholder-roles} \\
+	\caption{Stakeholder Objectives, Concerns and Management Strategies} \label{tab:stakeholder-management} \\
 	\hline
-	\textbf{Stakeholder} & \textbf{Objective} & \textbf{Strategy} \\
+	\textbf{Stakeholder} & \textbf{Objective / Concern} & \textbf{Management Strategy} \\
 	\hline
 	\endfirsthead
 
 	\hline
-	\textbf{Stakeholder} & \textbf{Objective} & \textbf{Strategy} \\
+	\textbf{Stakeholder} & \textbf{Objective / Concern} & \textbf{Management Strategy} \\
 	\hline
 	\endhead
 
@@ -55,43 +78,51 @@
 	\endfoot
 
 	Vorstand Personal (CHRO) &
-	Sicherstellung strategischer Ausrichtung und Bereitstellung von Ressourcen &
-	Regelmäßige Management-Updates und Einbindung in zentrale Projektentscheidungen \\
+	Sicherstellung der strategischen Ausrichtung sowie Priorisierung gegenüber anderen Initiativen &
+	Regelmäßige Managementberichte und Einbindung in zentrale Projektentscheidungen \\
 
 	HR Development Leitung &
-	Definition der Lernstrategie und Anforderungen an die Plattform &
-	Enge Zusammenarbeit bei Anforderungen und Priorisierung \\
+	Definition der Lernstrategie und Konsolidierung unterschiedlicher Fachbereichsanforderungen &
+	Enge Zusammenarbeit bei Anforderungsdefinition und Priorisierung \\
 
 	IT-Leitung &
-	Sicherstellung der Integration in bestehende IT-Systeme &
+	Sicherstellung der Integration der Plattform in bestehende IT-Systeme &
 	Architekturabstimmungen und technische Governance etablieren \\
 
 	Enterprise Architecture &
-	Definition von Architekturstandards und Sicherheitsanforderungen &
-	Architekturreviews und technische Abstimmungsschleifen \\
+	Einhaltung von Architektur- und Sicherheitsstandards &
+	Regelmäßige Architekturreviews und technische Abstimmungsschleifen \\
+
+	Betriebsrat &
+	Bedenken hinsichtlich Datenschutz, Kompetenztracking und möglicher Leistungsüberwachung &
+	Frühzeitige Einbindung und transparente Kommunikation der Datennutzung \\
+
+	Datenschutzbeauftragter &
+	Sicherstellung der DSGVO-konformen Verarbeitung personenbezogener Daten &
+	Einbindung in Systemdesign und Durchführung einer Datenschutz-Folgenabschätzung \\
 
 	HR Business Partner &
-	Sicherstellung der fachlichen Passung zu Weiterbildungsprozessen &
+	Sicherstellung der Passung der Plattform zu Weiterbildungsprozessen der Organisationseinheiten &
 	Workshops zur Anforderungsvalidierung und Pilotbereiche \\
 
 	Führungskräfte der Fachbereiche &
-	Unterstützung bei Einführung und Nutzung der Plattform &
-	Frühzeitige Einbindung und Schulungsprogramme \\
+	Unterstützung der Einführung bei gleichzeitig minimalem administrativem Aufwand &
+	Frühzeitige Einbindung sowie Schulungs- und Kommunikationsmaßnahmen \\
 
-	Mitarbeitende &
-	Akzeptanz und Nutzung der Lernplattform &
-	Change-Kommunikation, Schulungen und Self-Service-Angebote \\
-
-	Betriebsrat &
-	Sicherstellung der Einhaltung arbeitsrechtlicher Rahmenbedingungen &
-	Frühzeitige Abstimmung zu Datenschutz und Kompetenztracking \\
+	IT Operations &
+	Sicherstellung eines stabilen Betriebs der Plattform &
+	Definition von Betriebsprozessen, Monitoring und Supportstrukturen \\
 
 	Externer Plattformanbieter &
-	Bereitstellung und Betrieb der Plattformlösung &
-	Klare SLA, Projektkoordination und regelmäßige Abstimmungen \\
+	Bereitstellung und Weiterentwicklung der Plattformlösung &
+	Klare Service-Level-Agreements und regelmäßige Abstimmungen \\
+
+	Mitarbeitende &
+	Einfache Nutzung und wahrnehmbarer Mehrwert der Lernplattform &
+	Change-Kommunikation, Schulungen und Self-Service-Angebote \\
 
 	Projektmanager Lernplattform &
-	Steuerung des Projekts zur Erreichung des MOV &
-	Koordination aller Stakeholder und transparente Kommunikation \\
+	Koordination der Stakeholderinteressen und Sicherstellung der Zielerreichung des Projekts &
+	Transparente Projektsteuerung und strukturiertes Stakeholdermanagement \\
 
 \end{xltabular}
