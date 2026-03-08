@@ -1,0 +1,184 @@
+%!TEX root = ../dokumentation.tex
+
+\chapter{Projektzeitplan}
+
+Für das Projekt \glqq Lernplattform\grqq{} wurde der Zeitplan in
+\textit{Microsoft Project} erstellt. Für die Projektdokumentation wird der
+Zeitplan auf zwei Detaillierungsebenen betrachtet:
+
+\begin{itemize}
+    \item \textbf{High-Level-Zeitplan:} Darstellung der Hauptphasen des Projekts
+          in Form eines Gantt-Charts zur übersichtlichen Einordnung des Gesamtvorhabens.
+    \item \textbf{Detailplanung:} Für die operative Projektsteuerung wurden die
+          Hauptphasen zusätzlich um zwei weitere Ebenen heruntergebrochen, um
+          Arbeitspakete, Abhängigkeiten und Ressourcen realistisch planen und steuern
+          zu können.
+\end{itemize}
+
+Die zeitliche Planung orientiert sich am definierten MOV des Projekts. Das
+Vorhaben ist so angelegt, dass die Lernplattform innerhalb von zwölf Monaten
+eingeführt, getestet, pilotiert und konzernweit ausgerollt wird. Für die
+Planung wurde eine Zielprojektdauer von \textbf{230 Arbeitstagen} angesetzt.
+
+\section{Planungsgrundlage und Struktur des Zeitplans}
+
+Der Projektzeitplan gliedert das Vorhaben in die folgenden Hauptphasen:
+
+\begin{enumerate}
+    \item Projektdefinition
+    \item Detailplanung \& Architekturdesign
+    \item Systemkonfiguration \& Integration
+    \item Test \& Qualitätssicherung
+    \item Pilotbetrieb
+    \item Konzernweiter Rollout
+    \item Stabilisierung \& Projektabschluss
+\end{enumerate}
+
+Diese Phasen wurden in der operativen Planung jeweils weiter in Teilpakete und
+konkrete Aktivitäten zerlegt. Dadurch wird eine belastbare Grundlage für die
+Terminsteuerung, Fortschrittskontrolle und spätere Risikoüberwachung geschaffen.
+Der in der Dokumentation dargestellte High-Level-Plan dient vor allem der
+Managementsicht; die eigentliche Projektsteuerung erfolgt auf Basis der
+feingranularen Detailplanung in \textit{Microsoft Project}.
+
+\section{High-Level-Gantt-Chart}
+
+Abbildung~\ref{fig:gantt-highlevel} zeigt den Projektzeitplan auf
+Hauptphasenebene. Die Darstellung basiert auf dem Export aus
+\textit{Microsoft Project} und fasst die zentralen Projektphasen über die
+gesamte Laufzeit hinweg zusammen.
+
+\clearpage
+\begin{landscape}
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\linewidth,height=\textheight,keepaspectratio,page=1]{images/pm26_gantt_1level_landscape.pdf}
+    \caption{High-Level-Gantt-Chart des Projekts Lernplattform}
+    \label{fig:gantt-highlevel}
+  \end{figure}
+\end{landscape}
+\clearpage
+
+\section{Meilensteine}
+
+Zur Steuerung des Projekts wurden zentrale Meilensteine definiert. Diese bilden
+wesentliche Abschluss- und Entscheidungszeitpunkte ab und strukturieren das
+Projekt entlang der Hauptphasen.
+
+\begin{table}[H]
+    \centering
+    \caption{Zentrale Meilensteine des Projekts}
+    \label{tab:meilensteine}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}p{3.8cm}p{2.8cm}X@{}}
+        \toprule
+        \textbf{Meilenstein}                                  & \textbf{Datum} & \textbf{Bedeutung}                                                                                                            \\
+        \midrule
+        Projektstart                                          & 15.04.2026     & Formeller Start des Projekts nach Abschluss der initialen Projektdefinition und des Stakeholder Alignments.                   \\
+        Architekturdesign abgeschlossen                       & 02.06.2026     & Abschluss der inhaltlichen Architekturarbeiten inklusive Zielarchitektur, Infrastruktur-, Integrations- und Reportingkonzept. \\
+        Architekturfreigabe                                   & 02.06.2026     & Formelle Freigabe der Architektur als Voraussetzung für die nachgelagerte Systemkonfiguration und Integration.                \\
+        Systemintegration abgeschlossen                       & 30.07.2026     & Abschluss der technischen Implementierung, Systemkonfiguration, Integrationen, Datenmigration und Reporting-Implementierung.  \\
+        System bereit für Testphase                           & 30.07.2026     & Übergang aus der Implementierungsphase in die strukturierte Test- und Qualitätssicherung.                                     \\
+        Formale Freigabe des Systems für den Produktivbetrieb & 23.09.2026     & Ergebnis der Test- und Abnahmephase; das System ist für Pilotierung und produktiven Einsatz freigegeben.                      \\
+        Rollout-Entscheidung (Go/No-Go)                       & 09.11.2026     & Entscheidungspunkt nach Pilotbetrieb und Readiness-Check für den konzernweiten Rollout.                                       \\
+        Rollout in allen Ländern                              & 09.12.2026     & Abschluss des konzernweiten Rollouts und erfolgreiche Aktivierung der Ländergruppen.                                          \\
+        Projektabschluss                                      & 28.01.2027     & Formeller Abschluss des Projekts nach Stabilisierung, Dokumentation, Übergabe und Abschlussbericht.                           \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\section{Probabilistische Terminbetrachtung mit PERT}
+
+Da mehrere Arbeitspakete des Projekts mit Unsicherheiten behaftet sind, wurde
+die Terminplanung nicht ausschließlich deterministisch, sondern ergänzend
+probabilistisch vorgenommen. Hierfür wurden die Vorgangsdauern mit der
+PERT-Logik (\textit{Program Evaluation and Review Technique}) geschätzt.
+
+Für die relevanten Vorgänge wurden jeweils drei Dauerschätzungen hinterlegt:
+
+\begin{itemize}
+    \item \textbf{Optimistische Dauer (O):} günstiger Verlauf,
+    \item \textbf{Wahrscheinlichste Dauer (M):} realistischer Regelfall,
+    \item \textbf{Pessimistische Dauer (P):} ungünstiger Verlauf.
+\end{itemize}
+
+Die erwartete Vorgangsdauer ergibt sich nach PERT aus:
+
+\begin{equation}
+    E(T) = \frac{O + 4M + P}{6}
+\end{equation}
+
+Die Varianz eines Vorgangs ergibt sich zu:
+
+\begin{equation}
+    Var(T) = \left(\frac{P - O}{6}\right)^2
+\end{equation}
+
+Auf Basis der PERT-Auswertung für den kritischen Pfad ergeben sich für das
+Projekt die in Tabelle~\ref{tab:pert-auswertung} dargestellten Kennzahlen.
+
+\begin{table}[H]
+    \centering
+    \caption{Ergebnisse der PERT-Analyse}
+    \label{tab:pert-auswertung}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{@{}lr@{}}
+        \toprule
+        \textbf{Kennzahl}                                        & \textbf{Wert}    \\
+        \midrule
+        Anzahl kritischer Vorgänge                               & 82               \\
+        Gesamterwartungswert der Projektdauer                    & 223{,}00 Tage    \\
+        Gesamtvarianz                                            & 41{,}72 Tage$^2$ \\
+        Projektstandardabweichung                                & 6{,}46 Tage      \\
+        Zieldauer                                                & 230{,}00 Tage    \\
+        Z-Wert                                                   & 1{,}0837         \\
+        Eintrittswahrscheinlichkeit für Einhaltung der Zieldauer & 86{,}0\,\%       \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Die Auswertung zeigt, dass die erwartete Projektdauer des kritischen Pfads bei
+\textbf{223 Tagen} liegt. Bei einer geplanten Zieldauer von
+\textbf{230 Arbeitstagen} ergibt sich eine
+\textbf{Wahrscheinlichkeit von 86\,\%}, diese Vorgabe einzuhalten.
+Damit ist der Projektzeitplan ambitioniert, aber aus heutiger Sicht
+realistisch und hinreichend belastbar.
+
+Gleichzeitig zeigt die Standardabweichung von 6{,}46 Tagen, dass weiterhin
+relevante Terminunsicherheiten bestehen. Diese Unsicherheiten sind für ein
+Transformationsprojekt dieser Größenordnung erwartbar, insbesondere aufgrund
+von Abhängigkeiten in Architektur, Integration, Tests, Pilotierung und
+Rollout. Die probabilistische Betrachtung ergänzt daher den deterministischen
+Basisplan um eine realistischere Einschätzung der Terminrobustheit.
+
+\section{Critical Path}
+
+Der kritische Pfad umfasst diejenigen Vorgänge, deren Verzögerung unmittelbar
+zu einer Verschiebung des Projektendtermins führen würde. Er ist damit für die
+Terminsteuerung des Projekts von besonderer Bedeutung und wird im weiteren
+Projektcontrolling besonders überwacht.
+
+\clearpage
+\includepdf[pages=1, fitpaper, pagecommand={%
+    \thispagestyle{plain}%
+    \refstepcounter{figure}%
+    \addcontentsline{lof}{figure}{\protect\numberline{\thefigure}{Darstellung des kritischen Pfads}}%
+    \label{fig:critical-path}%
+}]{images/pm26_critical.pdf}
+\clearpage
+
+\section{Zusammenfassende Bewertung}
+
+Der Projektzeitplan bildet das Vorhaben auf strategischer und operativer Ebene
+nachvollziehbar ab. Der High-Level-Plan schafft Transparenz über die
+Projektphasen und wesentlichen Übergänge, während die detaillierte
+Feinplanung in \textit{Microsoft Project} die Grundlage für die operative
+Steuerung bildet.
+
+Die ergänzende PERT-Analyse erhöht die Aussagekraft des Zeitplans deutlich, da
+sie Unsicherheiten der Dauerplanung explizit berücksichtigt. Mit einer
+erwarteten Projektdauer von 223 Tagen und einer Wahrscheinlichkeit von
+86\,\%, die Zieldauer von 230 Arbeitstagen einzuhalten, ist der Terminplan
+insgesamt plausibel und vertretbar. Der Projektzeitplan stellt damit eine
+geeignete Grundlage für die weitere Terminüberwachung und das laufende
+Projektcontrolling dar.
