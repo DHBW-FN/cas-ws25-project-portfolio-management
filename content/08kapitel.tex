@@ -1,0 +1,47 @@
+%!TEX root = ../dokumentation.tex
+\chapter{Qualitätsanforderungen}
+
+Zur Sicherstellung der Zielerreichung des Projekts werden zentrale Qualitätsanforderungen
+definiert. Diese Anforderungen betreffen sowohl technische Eigenschaften der Lernplattform
+als auch organisatorische Aspekte der Projektdurchführung und der späteren Nutzung im
+Unternehmen. Für jedes Qualitätskriterium werden eine geeignete Messmethode sowie eine
+konkrete Akzeptanzschwelle festgelegt.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{p{4.5cm} p{6.5cm} p{4.5cm}}
+\toprule
+\textbf{Qualitätskriterium} & \textbf{Messmethode} & \textbf{Akzeptanzschwelle} \\
+\midrule
+Systemverfügbarkeit & Monitoring der Systemverfügbarkeit im Produktivbetrieb & $\geq$ 99,5\,\% Verfügbarkeit pro Monat \\
+
+Systemperformance & Messung der Antwortzeiten bei typischen Nutzeraktionen & Seitenladezeit $\leq$ 3 Sekunden \\
+
+Skalierbarkeit der Plattform & Lasttests mit simulierten Nutzern & System stabil bei $\geq$ 5.000 gleichzeitigen Nutzern \\
+
+Datenintegrität nach Migration & Stichprobenprüfung migrierter Datensätze & $\geq$ 99\,\% fehlerfreie Datensätze \\
+
+Korrekte Integration mit HR-Systemen & Integrationstests der Schnittstellen & 100\,\% erfolgreiche Datenübertragung \\
+
+Benutzerfreundlichkeit der Plattform & Nutzerbefragung nach Pilotbetrieb & $\geq$ 80\,\% positive Bewertung \\
+
+Funktionale Vollständigkeit & Abgleich der implementierten Funktionen mit Anforderungen & $\geq$ 95\,\% der definierten Anforderungen erfüllt \\
+
+Fehlerquote nach Go-Live & Auswertung der gemeldeten Systemfehler & $\leq$ 2 kritische Fehler pro Monat \\
+
+Sicherheits- und Berechtigungskonzept & Durchführung von Security- und Zugriffstests & 100\,\% korrekte Zugriffsbeschränkungen \\
+
+Reportinggenauigkeit & Vergleich von Systemreports mit Referenzdaten & $\geq$ 98\,\% Übereinstimmung \\
+
+Systemstabilität im Betrieb & Monitoring von Systemabstürzen & $\leq$ 1 ungeplanter Systemausfall pro Quartal \\
+
+Nutzungsquote der Plattform & Analyse der Nutzungsstatistiken & $\geq$ 60\,\% aktive Nutzer innerhalb von 12 Monaten \\
+
+Vollständigkeit der Projektdokumentation & Review der Dokumentationsartefakte & 100\,\% der definierten Dokumente vorhanden \\
+
+Schulungsqualität für Nutzer & Feedbackauswertung der Trainingsmaßnahmen & $\geq$ 80\,\% positive Rückmeldungen \\
+
+Einhaltung des Projektzeitplans & Vergleich von geplantem und tatsächlichem Projektfortschritt & Abweichung $\leq$ 10\,\% \\
+\bottomrule
+\end{tabular}
+\end{table}
