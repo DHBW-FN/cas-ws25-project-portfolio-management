@@ -8,265 +8,159 @@ identifiziert, die den Projekterfolg beeinflussen können. Risiken werden dabei
 als unsichere Ereignisse oder Bedingungen verstanden, die Auswirkungen auf
 Scope, Zeit, Kosten oder Qualität des Projekts haben können.
 
-Die Eintrittswahrscheinlichkeit der Risiken wird qualitativ bewertet:
+\section{Bewertung der Risiken}
+
+Die Bewertung der identifizierten Risiken erfolgt anhand einer
+zweidimensionalen Risikomatrix, welche die Eintrittswahrscheinlichkeit
+(Probability) sowie die Auswirkung eines Risikos (Impact) berücksichtigt.
+Beide Dimensionen werden auf einer Skala von 1 bis 5 bewertet.
 
 \begin{itemize}
-    \item \textbf{Gering} – unwahrscheinlich, aber möglich
-    \item \textbf{Mittel} – realistisches Risiko im Projektverlauf
-    \item \textbf{Hoch} – wahrscheinlich ohne geeignete Gegenmaßnahmen
+    \item \textbf{1 – Sehr gering}: Das Risiko ist sehr unwahrscheinlich bzw. hat nur minimale Auswirkungen auf das Projekt.
+    \item \textbf{2 – Gering}: Das Risiko kann auftreten, führt jedoch nur zu begrenzten Auswirkungen.
+    \item \textbf{3 – Mittel}: Das Risiko ist realistisch und kann messbare Auswirkungen auf Projektumfang, Zeit oder Kosten haben.
+    \item \textbf{4 – Hoch}: Das Risiko tritt mit erhöhter Wahrscheinlichkeit auf bzw. hat deutliche Auswirkungen auf den Projekterfolg.
+    \item \textbf{5 – Sehr hoch}: Das Risiko ist sehr wahrscheinlich oder hätte schwerwiegende Auswirkungen auf zentrale Projektziele.
 \end{itemize}
 
+Der Risikoscore ergibt sich aus der Multiplikation von
+Eintrittswahrscheinlichkeit und Auswirkung:
 
-\section{Projektdefinition}
+\begin{center}
+    \textit{Risk Score = Probability $\times$ Impact}
+\end{center}
 
-In der Phase der Projektdefinition werden Zielsetzung, Scope,
-Rahmenbedingungen sowie die organisatorischen Grundlagen des
-Projekts festgelegt. Diese Phase bildet die Basis für die weitere
-Detailplanung und Umsetzung.
+Der resultierende Score kann Werte zwischen 1 und 25 annehmen.
+Zur Klassifikation der Risiken werden folgende Kategorien verwendet:
 
-\subsection{Annahmen}
+\begin{itemize}
+    \item \textbf{Low Risk}: Score von 1 bis 5
+    \item \textbf{Medium Risk}: Score von 6 bis 11
+    \item \textbf{High Risk}: Score von 12 bis 25
+\end{itemize}
+
+Im Rahmen dieser Project Charter werden ausschließlich Risiken mit
+einem Score von mindestens 12 dargestellt, da diese als kritische
+Projektrisiken eingestuft werden und den größten Einfluss auf die
+Erreichung des Project MOV haben können. Das vollständige
+Risikoregister mit allen identifizierten Risiken ist im Anhang
+dokumentiert.
+
+\section{Zentrale Annahmen}
+
+Die folgenden Annahmen bilden zentrale Rahmenbedingungen für die
+Planung und Durchführung des Projekts. Sie betreffen insbesondere
+organisatorische Voraussetzungen, technische Integrationsfähigkeit
+sowie die erwartete Nutzung der Plattform.
 
 \begin{xltabular}{\textwidth}{@{}X X@{}}
     \hline
     \textbf{Annahme} & \textbf{Begründung} \\
     \hline
 
-    Das Management unterstützt die Einführung einer zentralen
-    Lernplattform strategisch und organisatorisch. &
-    Voraussetzung für Ressourcenbereitstellung und
-    projektweite Entscheidungsfähigkeit. \\
+    Das Management unterstützt die Einführung der Lernplattform
+    strategisch und stellt die erforderlichen Ressourcen für das Projekt
+    bereit. &
+    Die Unterstützung des Managements ist Voraussetzung für
+    Projektpriorisierung, Ressourcenbereitstellung und
+    organisationsweite Umsetzung. \\
 
     Die strategischen Ziele der Organisation im Bereich
-    Personalentwicklung und Weiterbildung bleiben während
-    der Projektlaufzeit stabil. &
-    Grundlage für den definierten MOV und die
-    Projektzielsetzung. \\
+    Personalentwicklung und Weiterbildung bleiben während der
+    Projektlaufzeit stabil. &
+    Stabile strategische Rahmenbedingungen sind notwendig,
+    um Scope, Projektziele und MOV konsistent umzusetzen. \\
 
-    Die identifizierten Stakeholder sind bereit,
-    aktiv an der Projektdefinition und den
-    Planungsaktivitäten mitzuwirken. &
-    Notwendig für Anforderungsdefinition und
-    Akzeptanz des Projekts. \\
+    Die relevanten Fachbereiche stellen Anforderungen vollständig
+    und fristgerecht bereit. &
+    Die Anforderungsanalyse bildet die Grundlage für
+    Architekturdesign, Plattformauswahl und Systemkonfiguration. \\
 
-    Die organisatorischen Rahmenbedingungen
-    (z.\,B. Budgetrahmen und Projektpriorität
-    im Portfolio) bleiben während der
-    Projektinitialisierung stabil. &
-    Grundlage für die initiale Planung von
-    Zeit, Ressourcen und Budget. \\
+    Die bestehende IT-Systemlandschaft ermöglicht eine Integration
+    der Lernplattform über standardisierte Schnittstellen. &
+    Die Integrationsfähigkeit ist Voraussetzung für den Austausch
+    von Benutzer-, Organisations- und Reportingdaten. \\
 
-    Der kalkulierte administrative Aufwand im
-    Schulungsmanagement von etwa 10 Mio. €
-    pro Jahr bildet eine realistische Basis für
-    die Wirtschaftlichkeitsbetrachtung. &
-    Wird zur Bewertung des wirtschaftlichen
-    Nutzens der Plattform im Business Case
-    verwendet. \\
-
-    \hline
-\end{xltabular}
-
-
-\subsection{Risiken}
-
-\begin{xltabular}{\textwidth}{@{}X c X@{}}
-    \hline
-    \textbf{Risiko} & \textbf{Eintrittswahrscheinlichkeit} & \textbf{Strategie zur Minimierung oder Bewältigung} \\
-    \hline
-
-    Unklare oder widersprüchliche Erwartungen verschiedener Stakeholder führen zu einem unklaren Projektumfang und zusätzlichen Abstimmungsaufwänden in der Planungsphase. &
-    Mittel &
-    Durchführung einer strukturierten Stakeholderanalyse sowie moderierter Abstimmungsworkshops zur frühzeitigen Klärung der Erwartungen. \\
-
-    Fehlende oder unzureichende Unterstützung durch das Top-Management kann zu eingeschränkter Ressourcenverfügbarkeit und einer niedrigen Priorität des Projekts im Portfolio führen. &
-    Gering &
-    Frühzeitige Einbindung des Sponsors sowie regelmäßige Statuskommunikation und Management-Reviews. \\
-
-    Änderungen strategischer Prioritäten innerhalb der Organisation während der Projektinitialisierung können eine Anpassung oder Reduktion des Projektumfangs erforderlich machen. &
-    Mittel &
-    Klare Verankerung des Projekts im Projektportfolio sowie regelmäßige Abstimmung mit strategischen Entscheidungsgremien. \\
-
-    Der organisatorische Veränderungsaufwand der Einführung einer zentralen Lernplattform wird unterschätzt, was zu geringer Akzeptanz und Verzögerungen bei der Umsetzung organisatorischer Prozesse führen kann. &
-    Mittel &
-    Frühe Einbindung von HR sowie strukturierte Change-Management-Aktivitäten und transparente Kommunikation des Nutzens. \\
-
-    Unrealistische Erwartungen an die wirtschaftlichen Effekte des Projekts können zu einer negativen Bewertung des Projekterfolgs im Vergleich zum MOV führen. &
-    Gering &
-    Verwendung konservativer Annahmen im Business Case und transparente Definition der Erfolgsmessung. \\
-
-    \hline
-\end{xltabular}
-
-
-
-\section{Detailplanung und Architekturdesign}
-
-Diese Phase umfasst insbesondere die Analyse der Anforderungen,
-die Definition der Zielarchitektur, das Infrastrukturdesign sowie
-die Auswahl einer geeigneten Lernplattform.
-
-\subsection{Annahmen}
-
-\begin{xltabular}{\textwidth}{@{}X X@{}}
-    \hline
-    \textbf{Annahme} & \textbf{Begründung} \\
-    \hline
-
-    Die relevanten Fachbereiche stellen Anforderungen vollständig und
-    fristgerecht bereit. &
-    Voraussetzung für Stakeholder-Workshops und die Konsolidierung der Anforderungen. \\
-
-    Eine geeignete Lernplattform kann im Markt identifiziert werden,
-    die die funktionalen und technischen Anforderungen erfüllt. &
-    Grundlage für Plattformauswahl und Architekturdesign. \\
-
-    Die bestehende Systemlandschaft ermöglicht eine Integration
-    über standardisierte Schnittstellen. &
-    Voraussetzung für die Definition der Integrationsarchitektur. \\
-
-    Unternehmensweite Architektur- und Sicherheitsrichtlinien sind bekannt
-    und können im Architekturdesign berücksichtigt werden. &
-    Notwendig für Architekturreview und Freigabe. \\
-
-    Zentrale Stakeholder (HR, IT-Architektur, Betriebsrat) stehen während
-    der Planungsphase für Entscheidungen zur Verfügung. &
-    Erforderlich für Architekturreviews und Governance-Freigaben. \\
-
-    Die organisatorischen Zielsetzungen des Projekts bleiben während der
-    Planungsphase stabil. &
-    Vermeidung grundlegender Scope-Änderungen. \\
-
-    \hline
-\end{xltabular}
-
-
-\subsection{Risiken}
-
-\begin{xltabular}{\textwidth}{@{}X c X@{}}
-    \hline
-    \textbf{Risiko} & \textbf{Eintrittswahrscheinlichkeit} & \textbf{Strategie zur Minimierung oder Bewältigung} \\
-    \hline
-
-    Unvollständige oder widersprüchliche Anforderungen aus verschiedenen Fachbereichen führen zu Verzögerungen im Architekturdesign und zusätzlichem Abstimmungsbedarf. &
-    Hoch &
-    Durchführung strukturierter Anforderungsworkshops sowie Priorisierung und Validierung der Anforderungen mit den Stakeholdern. \\
-
-    Die geplante Zielarchitektur ist nur eingeschränkt mit der bestehenden IT-Systemlandschaft kompatibel, was zusätzlichen Integrationsaufwand verursacht. &
-    Mittel &
-    Frühe Analyse der bestehenden Systemlandschaft sowie Durchführung mehrerer Architekturreviews. \\
-
-    Keine verfügbare Plattform erfüllt alle definierten Anforderungen vollständig, wodurch zusätzlicher Customizing- oder Integrationsaufwand entsteht. &
-    Mittel &
-    Durchführung eines Proof-of-Concept und strukturierte Bewertung der Plattformalternativen. \\
-
-    Verzögerungen bei Architekturfreigaben durch Governance-Gremien oder Betriebsrat führen zu einer Verschiebung der Implementierungsphase. &
-    Gering &
-    Frühzeitige Einbindung der relevanten Entscheidungsträger sowie regelmäßige Abstimmungstermine. \\
-
-    Der Integrationsaufwand zwischen Plattform und bestehenden Systemen wird unterschätzt, wodurch Termin- und Kostenüberschreitungen entstehen können. &
-    Mittel &
-    Durchführung einer detaillierten Schnittstellenanalyse sowie technischer Voruntersuchungen in der Planungsphase. \\
-
-    \hline
-\end{xltabular}
-
-
-
-\section{Systemkonfiguration und Integration}
-
-Diese Phase umfasst die Installation der Plattform, die technische
-Grundkonfiguration sowie die Integration mit bestehenden HR-
-und Unternehmenssystemen.
-
-\subsection{Annahmen}
-
-\begin{xltabular}{\textwidth}{@{}X X@{}}
-    \hline
-    \textbf{Annahme} & \textbf{Begründung} \\
-    \hline
-
-    Die ausgewählte Lernplattform kann innerhalb der vorgesehenen
-    Infrastrukturumgebungen installiert werden. &
-    Voraussetzung für die technische Implementierung. \\
-
-    Die erforderlichen technischen Ressourcen und IT-Infrastruktur
+    Die erforderliche IT-Infrastruktur sowie technische Ressourcen
     stehen während der Implementierungsphase zur Verfügung. &
-    Notwendig für Installation, Konfiguration und Integration. \\
+    Installation, Konfiguration und Integration der Plattform
+    setzen verfügbare Infrastrukturkapazitäten voraus. \\
 
-    Stammdaten aus HR-Systemen können für Benutzer- und
-    Organisationsstrukturen genutzt werden. &
-    Grundlage für Benutzer- und Rollenmodell der Plattform. \\
+    Stammdaten aus bestehenden HR-Systemen können für
+    Benutzer- und Organisationsstrukturen der Plattform genutzt werden. &
+    Die HR-Daten bilden die Grundlage für Benutzerverwaltung,
+    Rollenmodelle und organisatorische Zuordnung von Lerninhalten. \\
 
-    Die benötigten Schnittstellen zu HR- und Reporting-Systemen
-    sind technisch realisierbar. &
-    Voraussetzung für Integration und automatisiertes Reporting. \\
-
-    Die Datenmigration kann mit ausreichender Datenqualität
-    durchgeführt werden. &
-    Erforderlich für korrekte Benutzer- und Kursinformationen. \\
-
-    Fachbereiche unterstützen die Definition von Rollen,
-    Organisationsstruktur und Lernkategorien. &
-    Notwendig für die Konfiguration der Plattformstruktur. \\
+    Mitarbeitende nutzen die Lernplattform aktiv für Schulungen
+    und Weiterbildungsangebote. &
+    Die Nutzung der Plattform ist Voraussetzung für die Erreichung
+    der geplanten Nutzungsquote und damit des definierten MOV. \\
 
     \hline
 \end{xltabular}
 
 
-\subsection{Risiken}
+\section{Zentrale Projektrisiken}
+
+Im Rahmen der Risikoanalyse wurden projektrelevante Risiken identifiziert
+und hinsichtlich Eintrittswahrscheinlichkeit und Auswirkung bewertet.
+In dieser Project Charter werden ausschließlich Risiken mit hoher
+Gesamtbewertung dargestellt, da diese den größten Einfluss auf den
+Projekterfolg haben können.
 
 \begin{xltabular}{\textwidth}{@{}X c X@{}}
     \hline
-    \textbf{Risiko} & \textbf{Eintrittswahrscheinlichkeit} & \textbf{Strategie zur Minimierung oder Bewältigung} \\
+    \textbf{Risiko} & \textbf{Wahrscheinlichkeit} & \textbf{Strategie} \\
     \hline
 
-    Technische Integrationsprobleme mit bestehenden HR-Systemen führen zu Verzögerungen bei der Systemintegration und zusätzlichem Entwicklungsaufwand. &
+    Unvollständige oder widersprüchliche Anforderungen aus verschiedenen
+    Fachbereichen führen zu Verzögerungen im Architekturdesign und
+    zusätzlichem Abstimmungsbedarf. &
+    Hoch &
+    Durchführung strukturierter Anforderungsworkshops sowie Priorisierung
+    und Validierung der Anforderungen mit den Stakeholdern. \\
+
+    Nutzerakzeptanz bleibt hinter den Erwartungen zurück,
+    wodurch die geplante Nutzungsquote und damit der MOV
+    gefährdet wird. &
+    Hoch &
+    Intensives Change-Management, Schulungen,
+    Kommunikationskampagnen sowie kontinuierliches
+    Monitoring der Nutzungskennzahlen. \\
+
+    Änderungen strategischer Prioritäten innerhalb der
+    Organisation während der Projektinitialisierung können
+    eine Anpassung oder Reduktion des Projektumfangs
+    erforderlich machen. &
     Mittel &
-    Frühe Definition der Schnittstellenarchitektur sowie iterative Integrationstests während der Implementierung. \\
+    Klare Verankerung des Projekts im Projektportfolio sowie
+    regelmäßige Abstimmung mit strategischen
+    Entscheidungsgremien. \\
 
-    Unzureichende Datenqualität bei der Migration bestehender Schulungs- und Benutzerinformationen führt zu fehlerhaften Datenstrukturen und eingeschränkter Systemnutzung. &
+    Der organisatorische Veränderungsaufwand der Einführung
+    einer zentralen Lernplattform wird unterschätzt,
+    was zu geringer Akzeptanz und Verzögerungen bei der
+    Umsetzung organisatorischer Prozesse führen kann. &
     Mittel &
-    Durchführung von Datenbereinigung, Validierung und Testmigrationen vor der produktiven Datenübernahme. \\
+    Frühe Einbindung von HR sowie strukturierte
+    Change-Management-Aktivitäten und transparente
+    Kommunikation des Nutzens. \\
 
-    Fehlkonfiguration des Rollen- und Berechtigungsmodells führt zu Sicherheitsrisiken oder eingeschränkter Nutzung der Plattform. &
-    Gering &
-    Validierung der Berechtigungsstruktur gemeinsam mit Fachbereichen und IT-Security. \\
-
-    Performanceprobleme bei hoher Nutzerzahl führen zu eingeschränkter Systemverfügbarkeit und geringer Nutzerzufriedenheit. &
-    Gering &
-    Einrichtung einer skalierbaren Infrastruktur sowie Durchführung von Last- und Performancetests. \\
-
-    Verzögerungen bei der Bereitstellung der Infrastruktur durch interne IT-Abhängigkeiten verschieben die Installations- und Integrationsarbeiten. &
+    Der Integrationsaufwand zwischen Plattform und bestehenden
+    Systemen wird unterschätzt, wodurch Termin- und
+    Kostenüberschreitungen entstehen können. &
     Mittel &
-    Frühzeitige Abstimmung mit IT-Operations und verbindliche Infrastrukturplanung. \\
+    Durchführung einer detaillierten Schnittstellenanalyse sowie
+    technischer Voruntersuchungen in der Planungsphase. \\
 
-    Geringe Akzeptanz der Plattformkonfiguration bei Fachbereichen führt zu Anpassungsbedarf nach der Implementierung. &
+    User nutzen Altsysteme weiter, was die MOV-Erreichung
+    (Admin-Reduktion) gefährdet. &
     Mittel &
-    Iterative Abstimmung mit Fachbereichen und Durchführung von Pilotphasen. \\
+    Verbindlicher Decommissioning-Plan für Altsysteme sowie
+    klare Kommunikation der zukünftigen Systemlandschaft. \\
 
     \hline
 \end{xltabular}
 
-
-
-\section{Rollout und Betrieb}
-
-\subsection{Annahmen}
-
-\begin{xltabular}{\textwidth}{@{}X X@{}}
-    \hline
-    \textbf{Annahme} & \textbf{Begründung} \\
-    \hline
-    -- & -- \\
-    \hline
-\end{xltabular}
-
-\subsection{Risiken}
-
-\begin{xltabular}{\textwidth}{@{}X c X@{}}
-    \hline
-    \textbf{Risiko} & \textbf{Eintrittswahrscheinlichkeit} & \textbf{Strategie zur Minimierung oder Bewältigung} \\
-    \hline
-    -- & -- & -- \\
-    \hline
-\end{xltabular}
+Das vollständige Risikoregister mit allen identifizierten Risiken
+ist im Anhang dokumentiert.
