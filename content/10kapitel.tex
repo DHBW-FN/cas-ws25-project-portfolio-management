@@ -49,21 +49,24 @@ dokumentiert.
 \section{Zentrale Annahmen}
 
 Die folgenden Annahmen bilden zentrale Rahmenbedingungen für die
-Planung und Durchführung des Projekts. Sie betreffen insbesondere
-organisatorische Voraussetzungen, technische Integrationsfähigkeit
-sowie die erwartete Nutzung der Plattform.
+Planung und Durchführung des Projekts. Sie betreffen organisatorische
+Voraussetzungen, technische Integrationsfähigkeit, die Belastbarkeit
+der Ausgangsdaten sowie phasenspezifische Bedingungen für Pilotbetrieb
+und konzernweiten Rollout.
 
 \begin{xltabular}{\textwidth}{@{}X X@{}}
     \hline
     \textbf{Annahme} & \textbf{Begründung} \\
     \hline
 
-    Das Management unterstützt die Einführung der Lernplattform
-    strategisch und stellt die erforderlichen Ressourcen für das Projekt
-    bereit. &
-    Die Unterstützung des Managements ist Voraussetzung für
-    Projektpriorisierung, Ressourcenbereitstellung und
-    organisationsweite Umsetzung. \\
+    Das Management aller betroffenen Konzerngesellschaften unterstützt
+    die Einführung der Lernplattform strategisch, stellt die
+    erforderlichen Ressourcen bereit und treibt die Abschaltung der
+    Altsysteme aktiv voran. &
+    Managementunterstützung ist Voraussetzung für Projektpriorisierung,
+    Ressourcenzusagen und die Realisierung der kalkulierten
+    Einsparungen von ca. 3~Mio.~€~p.\,a. durch das
+    Decommissioning. \\
 
     Die strategischen Ziele der Organisation im Bereich
     Personalentwicklung und Weiterbildung bleiben während der
@@ -77,24 +80,40 @@ sowie die erwartete Nutzung der Plattform.
     Architekturdesign, Plattformauswahl und Systemkonfiguration. \\
 
     Die bestehende \ac{IT}-Systemlandschaft ermöglicht eine Integration
-    der Lernplattform über standardisierte Schnittstellen. &
+    der Lernplattform über standardisierte Schnittstellen. Die
+    Infrastruktur ist dabei auf eine Last von bis zu
+    90.000 gleichzeitigen Nutzern ausgelegt. &
     Die Integrationsfähigkeit ist Voraussetzung für den Austausch
-    von Benutzer-, Organisations- und Reportingdaten. \\
+    von Benutzer-, Organisations- und Reportingdaten; die
+    Skalierbarkeit sichert einen performanten Betrieb im
+    konzernweiten Rollout. \\
 
-    Die erforderliche \acs{IT}-Infrastruktur sowie technische Ressourcen
-    stehen während der Implementierungsphase zur Verfügung. &
-    Installation, Konfiguration und Integration der Plattform
-    setzen verfügbare Infrastrukturkapazitäten voraus. \\
-
-    Stammdaten aus bestehenden \ac{HR}-Systemen können für
-    Benutzer- und Organisationsstrukturen der Plattform genutzt werden. &
-    Die \acs{HR}-Daten bilden die Grundlage für Benutzerverwaltung,
-    Rollenmodelle und organisatorische Zuordnung von Lerninhalten. \\
+    Stamm- und Kompetenzdaten aus den bestehenden \ac{HR}-Systemen
+    sowie den dezentralen Länderstrukturen weisen eine ausreichende
+    Qualität auf, um ohne massiven manuellen Nachbearbeitungsaufwand
+    in die zentrale Plattform migriert werden zu können. &
+    Die Datenqualität ist Grundvoraussetzung für Benutzerverwaltung,
+    Rollenmodelle und die Etablierung einer konzernweiten
+    „Single~Source~of~Truth". \\
 
     Mitarbeitende nutzen die Lernplattform aktiv für Schulungen
     und Weiterbildungsangebote. &
     Die Nutzung der Plattform ist Voraussetzung für die Erreichung
     der geplanten Nutzungsquote und damit des definierten \acs{MOV}. \\
+
+    Die 200 Key-User aus Deutschland und den \ac{VL} stehen
+    für Onboarding-Workshops und Feedback vollständig zur Verfügung;
+    die validierten Prozesse sind repräsentativ für den gesamten Konzern. &
+    Verfügbarkeit und Repräsentativität der Fokusgruppe sind
+    Voraussetzung, damit die Piloterkenntnisse als Blaupause für den
+    globalen Rollout dienen können. \\
+
+    Phase~3 (Test \& Qualitätssicherung) schließt mit einer stabilen
+    Go-Live-Freigabe ab, sodass im Pilotbetrieb keine fundamentalen
+    Architekturfehler behoben werden müssen. &
+    Nur ein technisch stabiles System gewährleistet, dass das
+    Feedback der Fokusgruppe inhaltlich auswertbar ist und nicht
+    durch systemische Fehler überlagert wird. \\
 
     \hline
 \end{xltabular}
