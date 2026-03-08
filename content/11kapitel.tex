@@ -1,0 +1,75 @@
+\chapter{Projektadminstration}
+Im Folgenden Abschnitt werden die zentralen administrativen Prozesse und Pläne beschrieben, die zur Steuerung und Kontrolle des Projekts notwendig sind.
+
+\section{Projektkommunikationsplan}
+\label{sec:kommunikationsplan}
+
+Ein effektiver Kommunikationsplan ist essenziell, um die Erwartungen der Stakeholder zu steuern und sicherzustellen, dass die richtigen Informationen zur richtigen Zeit an die richtigen Empfänger gelangen. Der folgende Plan basiert auf der Stakeholderanalyse (siehe \ref{chap:stakeholder}) und definiert die Informationsbedarfe sowie die Verteilungsmechanismen während der Projektlaufzeit.
+
+\begin{table}[h!]
+\centering
+\caption{Projektkommunikationsplan nach Stakeholder-Gruppen}
+\label{tab:kommunikationsplan}
+\footnotesize
+\begin{tabular}{p{2.8cm} p{3.2cm} p{2.8cm} p{2cm} p{2.2cm}}
+\hline
+\textbf{Stakeholder} & \textbf{Informationsbedarf} & \textbf{Berichtstyp / Metrik} & \textbf{Frequenz} & \textbf{Medium / Format} \\ \hline
+Vorstand Personal (\acs{CHRO}) & Erreichung des \acs{MOV}, strategische Ausrichtung, Budgetstatus & Project Summary Report (\acs{KPI}s, \acs{NPV}) & Monatlich & Präsentation (LGL) \\
+\acs{HR} Development Leitung & Projektfortschritt, Anforderungsstatus, Lernstrategie-Fit & Statusbericht (Meilensteine, Scope) & Bi-wöchentlich & Statusmeeting \\
+\acs{IT}-Leitung / System Owner & Systemintegration, Schnittstellenstabilität, technische Governance & Technischer Statusbericht & Monatlich & E-Mail / Dashboard \\
+Enterprise Architecture & Einhaltung von Standards \& Architektur-Vorgaben & Architecture Review Report & Quartalsweise & Review-Meeting \\
+Betriebsrat & Datenschutzkonformität, Verarbeitungsverzeichnisse & Compliance Update / Protokolle & Monatlich & Sitzung / Dokument \\
+\acs{HR} Business Partner & Rollout-Zeitplan in den Ländern, Prozessanpassungen & Rollout-Readiness Report & Monatlich & Videokonferenz \\
+Mitarbeitende (Endnutzer) & Nutzen der Plattform („\ac{WIIFM}"), Starttermine, Schulungsangebote  & Change-Kommunikation / Release-Notes & Ereignisbasiert & Newsletter / Intranet \\
+\acs{IT} Operations & Betriebskonzept, Supportstrukturen, Monitoring-\acs{KPI}s  & Operations Manual / Service-Metriken & In Phase 5/6 & Wiki / MS Teams \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Berichtsformen und Metriken}
+Zur Überwachung des Projekts werden primär folgende Berichtsformen eingesetzt:
+\begin{itemize}
+    \item \textbf{Statusberichte:} Vergleich des Ist-Zustands mit dem Baseline-Plan bezüglich Zeit und Kosten
+    \item \textbf{Fortschrittsberichte:} Dokumentation der abgeschlossenen Arbeitspakete und Deliverables
+    \item \textbf{Prognoseberichte (Forecasting):} Vorhersage der voraussichtlichen Fertigstellungstermine und Kosten am Projektende mittels \ac{EVM} (z.\,B. \ac{SPI}, \ac{CPI}).
+\end{itemize}
+
+\subsection{Eskalationsweg}
+Sollten kritische Risiken oder Abweichungen vom Baseline-Plan identifiziert werden, die den finanziellen \acs{MOV} (3 Mio. € Einsparung) gefährden, erfolgt eine sofortige Eskalation durch den Projektmanager an die \acs{HR} Development Leitung und den Vorstand Personal.
+
+
+\section{Scope-Management-Plan}
+\label{sec:scope_management}
+
+Das Scope-Management stellt sich, dass alle für die Erreichung des \ac{MOV} notwendigen Arbeiten identifiziert werden – und ausschließlich diese. Der Scope-Management-Plan definiert die Prozesse zur Definition, Verifizierung und Kontrolle des Projektumfangs, um Risiken wie \textit{Scope Creep} oder \textit{Scope Leap} proaktiv zu begegnen.
+
+\subsection{Prozesse zur Umfangsfestlegung}
+Die Definition des Projektumfangs erfolgt bei dm in einem mehrstufigen Prozess:
+\begin{itemize}
+    \item \textbf{Anforderungserhebung:} Durchführung von strukturierten Workshops mit den Stakeholdern (\acs{HR} Business Partner, dmTECH), um funktionale und nicht-funktionale Anforderungen zu dokumentieren.
+    \item \textbf{Erstellung der \ac{WBS}:} Dekomposition der Deliverables in handhabbare Arbeitspakete (Work Packages), die eine eindeutige Zuweisung von Ressourcen und Zeitbedarfen ermöglichen.
+    \item \textbf{Abgrenzung (Scope Boundary):} Festlegung einer klaren Grenze zwischen „In-Scope“-Leistungen (z.\,B. technische Migration) und „Out-of-Scope“-Ausschlusskriterien (z.\,B. Erstellung von Lerninhalten), um falsche Erwartungen zu vermeiden.
+\end{itemize}
+
+\subsection{Scope Change Control Procedures}
+Um die Stabilität der Projektziele (Triple Constraint) zu gewährleisten, wird ein formaler Änderungsprozess etabliert. Jede Änderung am genehmigten Scope muss folgende Phasen durchlaufen:
+\begin{enumerate}
+    \item \textbf{\ac{CR}:} Einreichung eines schriftlichen Antrags inklusive Begründung und Priorisierung (Low, Medium, High).
+    \item \textbf{Impact Analysis:} Bewertung der Auswirkungen auf den \ac{MOV}, den Zeitplan und das Budget (550.000 € Einmalkosten) durch das Projektmanagement-Team.
+    \item \textbf{Entscheidung:} Genehmigung oder Ablehnung durch das Steering Committee (Vorstand Personal und \acs{HR} Development Leitung).
+    \item \textbf{Update:} Anpassung der Baseline-Pläne bei Genehmigung.
+\end{enumerate}
+
+\subsection{Validierung und formale Abnahme}
+Die Validierung des Scopes erfolgt durch den Vergleich der Projektergebnisse mit dem \ac{MOV}-Statement und den Akzeptanzkriterien.
+\begin{itemize}
+    \item \textbf{Meilenstein-Reviews:} Jede Phase endet mit einem \textit{Stage Gate}, an dem die Lieferobjekte formal abgenommen werden.
+    \item \textbf{Technisches Audit:} dmTECH verifiziert die technische Integration und Datensicherheit gemäß den Konzernstandards vor dem produktiven Rollout.
+\end{itemize}
+
+\subsection{Umgang mit Umfangsdynamiken}
+Zur Vermeidung von Projektinstabilität werden spezifische Kontrollmechanismen für folgende Szenarien implementiert:
+\begin{itemize}
+    \item \textbf{Scope Grope:} Minimierung durch eine Single Source of Truth bei der Anforderungsdokumentation in Phase 1.
+    \item \textbf{Scope Creep:} Überwachung durch wöchentliche Status-Reviews der \textit{Slipping Tasks} im Projektteam.
+    \item \textbf{Scope Leap:} Eskalation an den Vorstand, falls neue Anforderungen den \ac{MOV} grundlegend in Frage stellen.
+\end{itemize}
