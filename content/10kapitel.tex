@@ -8,6 +8,15 @@ identifiziert, die den Projekterfolg beeinflussen können. Risiken werden dabei
 als unsichere Ereignisse oder Bedingungen verstanden, die Auswirkungen auf
 Scope, Zeit, Kosten oder Qualität des Projekts haben können.
 
+Die Eintrittswahrscheinlichkeit der Risiken wird qualitativ bewertet:
+
+\begin{itemize}
+    \item \textbf{Gering} – unwahrscheinlich, aber möglich
+    \item \textbf{Mittel} – realistisches Risiko im Projektverlauf
+    \item \textbf{Hoch} – wahrscheinlich ohne geeignete Gegenmaßnahmen
+\end{itemize}
+
+
 \section{Projektdefinition}
 
 In der Phase der Projektdefinition werden Zielsetzung, Scope,
@@ -60,50 +69,34 @@ Detailplanung und Umsetzung.
 
 \subsection{Risiken}
 
-\begin{xltabular}{\textwidth}{@{}X X X@{}}
+\begin{xltabular}{\textwidth}{@{}X c X@{}}
     \hline
-    \textbf{Risiko} & \textbf{Auswirkung} & \textbf{Mögliche Maßnahmen} \\
+    \textbf{Risiko} & \textbf{Eintrittswahrscheinlichkeit} & \textbf{Strategie zur Minimierung oder Bewältigung} \\
     \hline
 
-    Unklare oder widersprüchliche Erwartungen
-    verschiedener Stakeholder an das Projekt. &
-    Unklarer Projektumfang und zusätzliche
-    Abstimmungsrunden in der Planungsphase. &
-    Frühe Stakeholderanalyse und
-    strukturierte Abstimmungsworkshops. \\
+    Unklare oder widersprüchliche Erwartungen verschiedener Stakeholder führen zu einem unklaren Projektumfang und zusätzlichen Abstimmungsaufwänden in der Planungsphase. &
+    Mittel &
+    Durchführung einer strukturierten Stakeholderanalyse sowie moderierter Abstimmungsworkshops zur frühzeitigen Klärung der Erwartungen. \\
 
-    Fehlende oder unzureichende Unterstützung
-    durch das Top-Management. &
-    Eingeschränkte Ressourcenverfügbarkeit
-    und geringere Priorität im Portfolio. &
-    Frühzeitige Einbindung des Sponsors
-    und regelmäßige Statuskommunikation. \\
+    Fehlende oder unzureichende Unterstützung durch das Top-Management kann zu eingeschränkter Ressourcenverfügbarkeit und einer niedrigen Priorität des Projekts im Portfolio führen. &
+    Gering &
+    Frühzeitige Einbindung des Sponsors sowie regelmäßige Statuskommunikation und Management-Reviews. \\
 
-    Veränderung strategischer Prioritäten
-    innerhalb der Organisation während
-    der Projektinitialisierung. &
-    Mögliche Anpassung oder Reduktion
-    des Projektumfangs. &
-    Klare Verankerung des Projekts
-    im Projektportfolio und Governance. \\
+    Änderungen strategischer Prioritäten innerhalb der Organisation während der Projektinitialisierung können eine Anpassung oder Reduktion des Projektumfangs erforderlich machen. &
+    Mittel &
+    Klare Verankerung des Projekts im Projektportfolio sowie regelmäßige Abstimmung mit strategischen Entscheidungsgremien. \\
 
-    Unterschätzung des organisatorischen
-    Veränderungsaufwands durch die Einführung
-    einer zentralen Plattform. &
-    Geringe Akzeptanz und verzögerte
-    Umsetzung organisatorischer Prozesse. &
-    Frühe Einbindung von HR und
-    Change-Management-Aktivitäten. \\
+    Der organisatorische Veränderungsaufwand der Einführung einer zentralen Lernplattform wird unterschätzt, was zu geringer Akzeptanz und Verzögerungen bei der Umsetzung organisatorischer Prozesse führen kann. &
+    Mittel &
+    Frühe Einbindung von HR sowie strukturierte Change-Management-Aktivitäten und transparente Kommunikation des Nutzens. \\
 
-    Unrealistische Erwartungen an die
-    wirtschaftlichen Effekte des Projekts. &
-    Gefährdung der Bewertung des
-    Projekterfolgs im Vergleich zum MOV. &
-    Realistische Annahmen und
-    transparente Erfolgsmessung. \\
+    Unrealistische Erwartungen an die wirtschaftlichen Effekte des Projekts können zu einer negativen Bewertung des Projekterfolgs im Vergleich zum MOV führen. &
+    Gering &
+    Verwendung konservativer Annahmen im Business Case und transparente Definition der Erfolgsmessung. \\
 
     \hline
 \end{xltabular}
+
 
 
 \section{Detailplanung und Architekturdesign}
@@ -149,34 +142,30 @@ die Auswahl einer geeigneten Lernplattform.
 
 \subsection{Risiken}
 
-\begin{xltabular}{\textwidth}{@{}X X X@{}}
+\begin{xltabular}{\textwidth}{@{}X c X@{}}
     \hline
-    \textbf{Risiko} & \textbf{Auswirkung} & \textbf{Mögliche Maßnahmen} \\
+    \textbf{Risiko} & \textbf{Eintrittswahrscheinlichkeit} & \textbf{Strategie zur Minimierung oder Bewältigung} \\
     \hline
 
-    Unvollständige oder widersprüchliche Anforderungen aus
-    unterschiedlichen Fachbereichen. &
-    Verzögerungen im Architekturdesign und zusätzlicher Abstimmungsbedarf. &
-    Strukturierte Anforderungsworkshops und Priorisierung. \\
+    Unvollständige oder widersprüchliche Anforderungen aus verschiedenen Fachbereichen führen zu Verzögerungen im Architekturdesign und zusätzlichem Abstimmungsbedarf. &
+    Hoch &
+    Durchführung strukturierter Anforderungsworkshops sowie Priorisierung und Validierung der Anforderungen mit den Stakeholdern. \\
 
-    Unzureichende Kompatibilität der Zielarchitektur mit der bestehenden
-    IT-Systemlandschaft. &
-    Erhöhter Integrationsaufwand und mögliche Anpassungen. &
-    Frühe Analyse der Systemlandschaft und Architekturreviews. \\
+    Die geplante Zielarchitektur ist nur eingeschränkt mit der bestehenden IT-Systemlandschaft kompatibel, was zusätzlichen Integrationsaufwand verursacht. &
+    Mittel &
+    Frühe Analyse der bestehenden Systemlandschaft sowie Durchführung mehrerer Architekturreviews. \\
 
-    Keine Plattform erfüllt alle definierten Anforderungen vollständig. &
-    Zusätzlicher Customizing- oder Integrationsaufwand. &
-    Proof-of-Concept und strukturierte Bewertung der Alternativen. \\
+    Keine verfügbare Plattform erfüllt alle definierten Anforderungen vollständig, wodurch zusätzlicher Customizing- oder Integrationsaufwand entsteht. &
+    Mittel &
+    Durchführung eines Proof-of-Concept und strukturierte Bewertung der Plattformalternativen. \\
 
-    Verzögerungen bei Architekturfreigaben durch Governance-Gremien
-    oder Betriebsrat. &
-    Zeitliche Verzögerung der nachfolgenden Implementierungsphase. &
-    Frühzeitige Einbindung der relevanten Entscheidungsträger. \\
+    Verzögerungen bei Architekturfreigaben durch Governance-Gremien oder Betriebsrat führen zu einer Verschiebung der Implementierungsphase. &
+    Gering &
+    Frühzeitige Einbindung der relevanten Entscheidungsträger sowie regelmäßige Abstimmungstermine. \\
 
-    Unterschätzter Integrationsaufwand zwischen Plattform und
-    bestehenden Systemen. &
-    Termin- und Kostenüberschreitungen. &
-    Frühe Schnittstellenanalyse und technische Voruntersuchung. \\
+    Der Integrationsaufwand zwischen Plattform und bestehenden Systemen wird unterschätzt, wodurch Termin- und Kostenüberschreitungen entstehen können. &
+    Mittel &
+    Durchführung einer detaillierten Schnittstellenanalyse sowie technischer Voruntersuchungen in der Planungsphase. \\
 
     \hline
 \end{xltabular}
@@ -226,37 +215,34 @@ und Unternehmenssystemen.
 
 \subsection{Risiken}
 
-\begin{xltabular}{\textwidth}{@{}X X X@{}}
+\begin{xltabular}{\textwidth}{@{}X c X@{}}
     \hline
-    \textbf{Risiko} & \textbf{Auswirkung} & \textbf{Mögliche Maßnahmen} \\
+    \textbf{Risiko} & \textbf{Eintrittswahrscheinlichkeit} & \textbf{Strategie zur Minimierung oder Bewältigung} \\
     \hline
 
-    Technische Integrationsprobleme mit bestehenden HR-Systemen. &
-    Verzögerung der Integration und zusätzlicher Entwicklungsaufwand. &
-    Frühe Definition der Schnittstellenarchitektur und Integrationstests. \\
+    Technische Integrationsprobleme mit bestehenden HR-Systemen führen zu Verzögerungen bei der Systemintegration und zusätzlichem Entwicklungsaufwand. &
+    Mittel &
+    Frühe Definition der Schnittstellenarchitektur sowie iterative Integrationstests während der Implementierung. \\
 
-    Unzureichende Datenqualität bei der Migration bestehender
-    Schulungs- und Benutzerinformationen. &
-    Fehlerhafte Datenstrukturen und eingeschränkte Systemnutzung. &
-    Datenbereinigung und Validierung vor Migration. \\
+    Unzureichende Datenqualität bei der Migration bestehender Schulungs- und Benutzerinformationen führt zu fehlerhaften Datenstrukturen und eingeschränkter Systemnutzung. &
+    Mittel &
+    Durchführung von Datenbereinigung, Validierung und Testmigrationen vor der produktiven Datenübernahme. \\
 
-    Fehlkonfiguration von Rollen- und Berechtigungsmodellen. &
-    Sicherheitsrisiken oder Einschränkungen für Nutzer. &
-    Validierung der Berechtigungsstruktur mit Fachbereichen. \\
+    Fehlkonfiguration des Rollen- und Berechtigungsmodells führt zu Sicherheitsrisiken oder eingeschränkter Nutzung der Plattform. &
+    Gering &
+    Validierung der Berechtigungsstruktur gemeinsam mit Fachbereichen und IT-Security. \\
 
-    Performanceprobleme bei hoher Nutzerzahl. &
-    Einschränkung der Systemverfügbarkeit oder Nutzerzufriedenheit. &
-    Skalierbare Infrastruktur und Lasttests. \\
+    Performanceprobleme bei hoher Nutzerzahl führen zu eingeschränkter Systemverfügbarkeit und geringer Nutzerzufriedenheit. &
+    Gering &
+    Einrichtung einer skalierbaren Infrastruktur sowie Durchführung von Last- und Performancetests. \\
 
-    Verzögerungen bei der Bereitstellung der Infrastruktur
-    durch interne IT-Abhängigkeiten. &
-    Verschiebung der Installations- und Integrationsarbeiten. &
-    Frühzeitige Abstimmung mit IT-Operations. \\
+    Verzögerungen bei der Bereitstellung der Infrastruktur durch interne IT-Abhängigkeiten verschieben die Installations- und Integrationsarbeiten. &
+    Mittel &
+    Frühzeitige Abstimmung mit IT-Operations und verbindliche Infrastrukturplanung. \\
 
-    Geringe Akzeptanz der Plattformkonfiguration bei
-    Fachbereichen. &
-    Anpassungsbedarf nach Implementierung. &
-    Iterative Abstimmung und Einbindung der Fachbereiche. \\
+    Geringe Akzeptanz der Plattformkonfiguration bei Fachbereichen führt zu Anpassungsbedarf nach der Implementierung. &
+    Mittel &
+    Iterative Abstimmung mit Fachbereichen und Durchführung von Pilotphasen. \\
 
     \hline
 \end{xltabular}
@@ -277,9 +263,9 @@ und Unternehmenssystemen.
 
 \subsection{Risiken}
 
-\begin{xltabular}{\textwidth}{@{}X X X@{}}
+\begin{xltabular}{\textwidth}{@{}X c X@{}}
     \hline
-    \textbf{Risiko} & \textbf{Auswirkung} & \textbf{Mögliche Maßnahmen} \\
+    \textbf{Risiko} & \textbf{Eintrittswahrscheinlichkeit} & \textbf{Strategie zur Minimierung oder Bewältigung} \\
     \hline
     -- & -- & -- \\
     \hline
