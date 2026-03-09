@@ -7,41 +7,49 @@ als auch organisatorische Aspekte der Projektdurchführung und der späteren Nut
 Unternehmen. Für jedes Qualitätskriterium werden eine geeignete Messmethode sowie eine
 konkrete Akzeptanzschwelle festgelegt.
 
-\begin{table}[H]
-\centering
-\begin{tabular}{p{4.5cm} p{6.5cm} p{4.5cm}}
-\toprule
-\textbf{Qualitätskriterium} & \textbf{Messmethode} & \textbf{Akzeptanzschwelle} \\
-\midrule
-Systemverfügbarkeit & Monitoring der Systemverfügbarkeit im Produktivbetrieb & $\geq$ 99,5\,\% Verfügbarkeit pro Monat \\
+\begin{xltabular}{\textwidth}{@{}XXc@{}}
+	\caption{Qualitätsanforderungen der Lernplattform} \label{tab:quality-req} \\
+	\hline
+	\textbf{Qualitätskriterium} & \textbf{Messmethode} & \textbf{Akzeptanzschwelle} \\
+	\hline
+	\endfirsthead
 
-Systemperformance & Messung der Antwortzeiten bei typischen Nutzeraktionen & Seitenladezeit $\leq$ 3 Sekunden \\
+	\hline
+	\textbf{Qualitätskriterium} & \textbf{Messmethode} & \textbf{Akzeptanzschwelle} \\
+	\hline
+	\endhead
 
-Skalierbarkeit der Plattform & Lasttests mit simulierten Nutzern & System stabil bei $\geq$ 5.000 gleichzeitigen Nutzern \\
+	\hline
+	\endfoot
 
-Datenintegrität nach Migration & Stichprobenprüfung migrierter Datensätze & $\geq$ 99\,\% fehlerfreie Datensätze \\
+	Systemverfügbarkeit & Monitoring der Systemverfügbarkeit im Produktivbetrieb & $\geq$ 99{,}5\,\% \\
 
-Korrekte Integration mit \ac{HR}-Systemen & Integrationstests der Schnittstellen & 100\,\% erfolgreiche Datenübertragung \\
+	Systemperformance & Messung der Antwortzeiten bei typischen Nutzeraktionen & $\leq$ 3 Sekunden \\
 
-Benutzerfreundlichkeit der Plattform & Nutzerbefragung nach Pilotbetrieb & $\geq$ 80\,\% positive Bewertung \\
+	Skalierbarkeit der Plattform & Lasttests mit simulierten Nutzern & $\geq$ 5.000 gleichzeitige Nutzer \\
 
-Funktionale Vollständigkeit & Abgleich der implementierten Funktionen mit Anforderungen & $\geq$ 95\,\% der definierten Anforderungen erfüllt \\
+	Datenintegrität nach Migration & Stichprobenprüfung migrierter Datensätze & $\geq$ 99\,\% fehlerfrei \\
 
-Fehlerquote nach Go-Live & Auswertung der gemeldeten Systemfehler & $\leq$ 2 kritische Fehler pro Monat \\
+	Korrekte Integration mit \ac{HR}-Systemen & Integrationstests der Schnittstellen & 100\,\% erfolgreich \\
 
-Sicherheits- und Berechtigungskonzept & Durchführung von Security- und Zugriffstests & 100\,\% korrekte Zugriffsbeschränkungen \\
+	Benutzerfreundlichkeit der Plattform & Nutzerbefragung nach Pilotbetrieb & $\geq$ 80\,\% positive Bewertung \\
 
-Reportinggenauigkeit & Vergleich von Systemreports mit Referenzdaten & $\geq$ 98\,\% Übereinstimmung \\
+	Funktionale Vollständigkeit & Abgleich implementierter Funktionen mit Anforderungen & $\geq$ 95\,\% erfüllt \\
 
-Systemstabilität im Betrieb & Monitoring von Systemabstürzen & $\leq$ 1 ungeplanter Systemausfall pro Quartal \\
+	Fehlerquote nach Go-Live & Auswertung gemeldeter Systemfehler & $\leq$ 2 kritische Fehler / Monat \\
 
-Nutzungsquote der Plattform & Analyse der Nutzungsstatistiken & $\geq$ 60\,\% aktive Nutzer innerhalb von 12 Monaten \\
+	Sicherheits- und Berechtigungskonzept & Security- und Zugriffstests & 100\,\% korrekte Zugriffsbeschränkungen \\
 
-Vollständigkeit der Projektdokumentation & Review der Dokumentationsartefakte & 100\,\% der definierten Dokumente vorhanden \\
+	Reportinggenauigkeit & Vergleich Systemreports mit Referenzdaten & $\geq$ 98\,\% Übereinstimmung \\
 
-Schulungsqualität für Nutzer & Feedbackauswertung der Trainingsmaßnahmen & $\geq$ 80\,\% positive Rückmeldungen \\
+	Systemstabilität im Betrieb & Monitoring ungeplanter Systemausfälle & $\leq$ 1 Ausfall / Quartal \\
 
-Einhaltung des Projektzeitplans & Vergleich von geplantem und tatsächlichem Projektfortschritt & Abweichung $\leq$ 10\,\% \\
-\bottomrule
-\end{tabular}
-\end{table}
+	Nutzungsquote der Plattform & Analyse der Nutzungsstatistiken & $\geq$ 60\,\% aktive Nutzer \\
+
+	Vollständigkeit der Projektdokumentation & Review der Dokumentationsartefakte & 100\,\% vorhanden \\
+
+	Schulungsqualität für Nutzer & Feedbackauswertung der Trainingsmaßnahmen & $\geq$ 80\,\% positiv \\
+
+	Einhaltung des Projektzeitplans & Vergleich geplant vs. tatsächlich & $\leq$ 10\,\% Abweichung \\
+
+\end{xltabular}
