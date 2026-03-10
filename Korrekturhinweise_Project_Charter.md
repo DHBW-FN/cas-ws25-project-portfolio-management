@@ -4,7 +4,6 @@ Strenge Prüfung als Korrektor. Alle Stellen, die Punktabzug begründen könnten
 
 | Dateiname | Überschrift / Stelle | Problem | Empfohlene Korrektur |
 |-----------|----------------------|---------|----------------------|
-| 02kapitel.tex | Stakeholder Identification and Assessment (Tabelle) | Eintrag „Projektmanager Lernplattform“ (Einfluss 8) steht nach „Mitarbeitende“ (Einfluss 4). Sortierung wirkt willkürlich und erschwert die Nachvollziehbarkeit der Einflussstufen. | Tabelle nach Einfluss (z. B. absteigend 10→0) sortieren oder Sortierkriterium im Fließtext kurz nennen. |
 | 03kapitel.tex | Finanzielle Betrachtung | NPV verwendet 5 Jahre, ROI explizit 3 Jahre. Unterschiedlicher Betrachtungszeitraum wird nicht begründet; wirkt inkonsistent. | Kurz begründen (z. B. „ROI wird über 3 Jahre ausgewiesen, da …“ oder Betrachtungszeitraum angleichen und einheitlich darstellen). |
 | 04kapitel.tex | Wirkungsbereiche und Wertbeitrag | „Marchewka“ und „sechs Schritte“ werden zitiert ohne Quellenangabe. | Literaturverweis einfügen (z. B. Marchewka, J.T.: Information Technology Project Management. Auflage, Jahr) und im Literaturverzeichnis führen. |
 | 04kapitel.tex | MOV-Metriken (Tabelle) | „Bei Abschluss“ bei KPI-Verfügbarkeit und Datenintegrität ist unklar: Abschluss des Projekts, der Phase oder des Go-Live? | Konkretisieren, z. B. „Bei Projektabschluss“ oder „Bei Go-Live“ bzw. festen Zeitpunkt (z. B. „12 Monate nach Go-Live“) angeben. |
@@ -16,16 +15,3 @@ Strenge Prüfung als Korrektor. Alle Stellen, die Punktabzug begründen könnten
 | 10kapitel.tex | Zentrale Projektrisiken (Tabelle) | Risikobewertung wird zuvor als „Probability × Impact“ eingeführt; Tabelle enthält nur „Wahrscheinlichkeit“ und „Strategie“, keine Spalte „Auswirkung“. Score bzw. Einordnung (High/Medium) ist nicht nachvollziehbar. | Spalte „Auswirkung“ (1–5) und optional „Score“ ergänzen, damit die Darstellung zur beschriebenen Risikomatrix passt. |
 | 10kapitel.tex | Zentrale Annahmen / Zentrale Projektrisiken (xltabular) | Beide Tabellen ohne `\endfirsthead`/`\endhead`. Bei mehrseitigem Umbruch fehlt die Kopfzeile. | Wie in 02kapitel.tex `\endfirsthead` und `\endhead` mit Tabellenkopf setzen. |
 | 11kapitel.tex | Diverse Abschnitte | „dmTECH“ wird mehrfach verwendet, erscheint aber nicht im Abkürzungsverzeichnis. | Beim ersten Vorkommen ausschreiben (z. B. „dmTECH (IT-Betriebsorganisation der dm-Gruppe)“) oder Eintrag im Abkürzungsverzeichnis ergänzen. |
-
----
-
-**Bereits umgesetzte Korrekturen (ohne Tabelle):**
-
-- **11kapitel.tex:** Tippfehler „Projektadminstration“ → „Projektadministration“
-- **11kapitel.tex:** „LGL“ ausgeschrieben als „Lenkungsgremium“
-- **11kapitel.tex:** „Bi-wöchentlich“ → „Zweiwöchentlich“
-- **11kapitel.tex:** „500.000 € Einmalkosten“ → „Projektbudget (500.000 €)“
-- **04kapitel.tex:** „MA“ in MOV-Metriken ausgeschrieben als „Mitarbeitenden“
-- **03kapitel.tex:** ROI-Formel um „Über einen Betrachtungszeitraum von 3 Jahren“ ergänzt; Payback/ROI-Formatierung bereinigt
-- **10kapitel.tex:** Verweis auf Risikoregister als „(Abb.~\ref{fig:risikoregister})“ gesetzt (beide Stellen)
-- **11kapitel.tex:** „Power-BI“ → „Power~BI“ (Produktname einheitlich)
