@@ -1,12 +1,6 @@
 %!TEX root = ../dokumentation.tex
-
 %
-% vorher in Konsole folgendes aufrufen:
-%	makeglossaries makeglossaries dokumentation.acn && makeglossaries dokumentation.glo
+% Glossar derzeit deaktiviert (weder \makeglossaries noch \input{ads/glossary}
+% in dokumentation.tex). Bei Wiederverwendung: \newglossaryentry{ref}{name={...},description={...}}
+% und im Text \gls{ref}; Build: pdflatex → makeglossaries → pdflatex.
 %
-
-%
-% Glossareintraege --> referenz, name, beschreibung
-% Aufruf mit \gls{...}
-%
-\newglossaryentry{Glossareintrag}{name={Glossareintrag},plural={Glossareinträge},description={Ein Glossar beschreibt verschiedenste Dinge in kurzen Worten}}
