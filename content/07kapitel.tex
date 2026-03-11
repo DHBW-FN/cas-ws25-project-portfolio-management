@@ -19,26 +19,31 @@ Das resultierende Projektbudget stellt somit die aggregierten Kosten
 aller Projektaktivitäten dar, die zur Umsetzung des definierten
 Projektumfangs erforderlich sind.
 
-\begin{table}[htbp]
-    \centering
-    \caption{Projektbudget nach Projektphasen}
-    \label{tab:budget}
-    \begin{tabularx}{\textwidth}{@{}lX@{}}
-        \toprule
-        \textbf{Projektphase}              & \textbf{Budget (€)} \\
-        \midrule
-        Projektdefinition                  & 16.000              \\
-        Detailplanung \& Architekturdesign & 107.000             \\
-        Systemkonfiguration \& Integration & 76.000              \\
-        Test \& Qualitätssicherung         & 56.000              \\
-        Pilotbetrieb                       & 98.000              \\
-        Konzernweiter Rollout              & 55.000              \\
-        Stabilisierung \& Projektabschluss & 36.000              \\
-        \midrule
-        \textbf{Gesamtbudget}              & \textbf{444.000}    \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
+\begin{xltabular}{\textwidth}{@{}lc@{}}
+    \caption{Projektbudget nach Projektphasen} \label{tab:budget} \\
+    \toprule
+    \textbf{Projektphase}              & \textbf{Budget (€)} \\
+    \midrule
+    \endfirsthead
+
+    \toprule
+    \textbf{Projektphase}              & \textbf{Budget (€)} \\
+    \midrule
+    \endhead
+
+    \bottomrule
+    \endfoot
+
+    Projektdefinition                  & 16.000              \\
+    Detailplanung \& Architekturdesign & 107.000             \\
+    Systemkonfiguration \& Integration & 76.000              \\
+    Test \& Qualitätssicherung         & 56.000              \\
+    Pilotbetrieb                       & 98.000              \\
+    Konzernweiter Rollout              & 55.000              \\
+    Stabilisierung \& Projektabschluss & 36.000              \\
+    \midrule
+    \textbf{Gesamtbudget}              & \textbf{444.000}    \\
+\end{xltabular}
 
 Abbildung \ref{fig:budget_phase} visualisiert die Verteilung der
 Projektkosten über die einzelnen Projektphasen.
