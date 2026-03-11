@@ -45,88 +45,94 @@ Datenbasis für Reporting und Kompetenzmanagement erreicht werden.
 
 \section{Überblick über die angestrebte Wirkung}
 
-\begin{table}[H]
-\centering
-\begin{tabular}{p{4cm} p{10.5cm}}
-\toprule
-\textbf{Wirkungsbereich} & \textbf{Beschreibung} \\
-\midrule
-Strategisch &
-Stärkung der Kompetenzentwicklung der Mitarbeitenden und Unterstützung
-der strategischen Personalentwicklung. \\
+\begin{table}[htbp]
+  \centering
+  \caption{Wirkungsbereiche des Projekts}
+  \label{tab:wirkungsbereiche}
+  \begin{tabularx}{\textwidth}{@{}lX@{}}
+    \toprule
+    \textbf{Wirkungsbereich} & \textbf{Beschreibung} \\
+    \midrule
+    Strategisch &
+    Stärkung der Kompetenzentwicklung der Mitarbeitenden und Unterstützung
+    der strategischen Personalentwicklung. \\
 
-\addlinespace
-Finanziell &
-Reduktion administrativer Aufwände sowie Konsolidierung bestehender
-Systemlandschaften. Die Wirtschaftlichkeitsbetrachtung zeigt eine
-sehr kurze Amortisationsdauer, einen hohen \ac{ROI} sowie einen
-deutlich positiven Kapitalwert. \\
+    \addlinespace
+    Finanziell &
+    Reduktion administrativer Aufwände sowie Konsolidierung bestehender
+    Systemlandschaften. Die Wirtschaftlichkeitsbetrachtung zeigt eine
+    sehr kurze Amortisationsdauer, einen hohen \ac{ROI} sowie einen
+    deutlich positiven Kapitalwert. \\
 
-\addlinespace
-Operativ &
-Effizientere Planung, Durchführung und Dokumentation von
-Schulungsmaßnahmen durch integrierte End-to-End-Prozesse. \\
+    \addlinespace
+    Operativ &
+    Effizientere Planung, Durchführung und Dokumentation von
+    Schulungsmaßnahmen durch integrierte End-to-End-Prozesse. \\
 
-\addlinespace
-Mitarbeitende / Kunden &
-Verbesserter Zugang zu Lernangeboten und höhere Transparenz über
-Qualifizierungs- und Entwicklungsmöglichkeiten. \\
+    \addlinespace
+    Mitarbeitende / Kunden &
+    Verbesserter Zugang zu Lernangeboten und höhere Transparenz über
+    Qualifizierungs- und Entwicklungsmöglichkeiten. \\
 
-\addlinespace
-Sonstiges &
-Aufbau einer konsolidierten Datenbasis für organisationsweite
-Weiterbildungs- und Kompetenzkennzahlen. \\
+    \addlinespace
+    Sonstiges &
+    Aufbau einer konsolidierten Datenbasis für organisationsweite
+    Weiterbildungs- und Kompetenzkennzahlen. \\
 
-\bottomrule
-\end{tabular}
+    \bottomrule
+  \end{tabularx}
 \end{table}
 
 \section{Finanzielle Betrachtung der Plattformeinführung}
 
 Die wirtschaftliche Bewertung basiert auf folgenden Annahmen:
 
-\begin{table}[H]
-\centering
-\begin{tabular}{p{8cm} p{5cm}}
-\toprule
-\textbf{Parameter} & \textbf{Wert} \\
-\midrule
-Administrativer Schulungsaufwand p.\,a. & 10.000.000 € \\
-Effizienzsteigerung & 50\,\% \\
-Projektkosten (inkl. Migration) & 500.000 € \\
-Betrachtungszeitraum & 5 Jahre \\
-Diskontierungszins & 5\,\% \\
-\bottomrule
-\end{tabular}
+\begin{table}[htbp]
+  \centering
+  \caption{Annahmen für die finanzielle Bewertung}
+  \label{tab:finanzielle-annahmen}
+  \begin{tabularx}{\textwidth}{@{}lX@{}}
+    \toprule
+    \textbf{Parameter} & \textbf{Wert} \\
+    \midrule
+    Administrativer Schulungsaufwand p.\,a. & 10.000.000 € \\
+    Effizienzsteigerung & 50\,\% \\
+    Projektkosten (inkl. Migration) & 500.000 € \\
+    Betrachtungszeitraum & 5 Jahre \\
+    Diskontierungszins & 5\,\% \\
+    \bottomrule
+  \end{tabularx}
 \end{table}
 
 Neben der Prozessautomatisierung entstehen Einsparungen durch die
 Konsolidierung der bestehenden Systemlandschaft. Gleichzeitig fallen
 laufende Kosten für den Betrieb der neuen Plattform an.
 
-\begin{table}[H]
-\centering
-\begin{tabular}{p{8cm} p{3cm} p{3cm}}
-\toprule
-\textbf{Kostencluster} & \textbf{Kosten p.\,a.} & \textbf{Einsparung p.\,a.} \\
-\midrule
-SuccessFactors Lizenzkosten & 1.350.000 € & -- \\
-Zusatzspeicher & 13.000 € & -- \\
-DEV + TST Tenants & 20.000 € & -- \\
-Content Storage & 7.500 € & -- \\
+\begin{table}[htbp]
+  \centering
+  \caption{Kosten- und Einsparungsstruktur der Plattformeinführung}
+  \label{tab:kosten-einsparungen}
+  \begin{tabularx}{\textwidth}{@{}Xcc@{}}
+    \toprule
+    \textbf{Kostencluster} & \textbf{Kosten p.\,a.} & \textbf{Einsparung p.\,a.} \\
+    \midrule
+    SuccessFactors Lizenzkosten & 1.350.000 € & -- \\
+    Zusatzspeicher & 13.000 € & -- \\
+    DEV + TST Tenants & 20.000 € & -- \\
+    Content Storage & 7.500 € & -- \\
 
-\midrule
+    \midrule
 
-Lizenzen, Projekte und Schulungsaufwand bisheriger Systeme & -- & 510.000 € \\
-Rechenzentrum und Infrastruktur & -- & 190.000 € \\
-Betrieb und Wartung & -- & 195.000 € \\
-Datenmanagement und Schnittstellenbetrieb & -- & 75.000 € \\
-Ausfall- und Qualitätskosten & -- & 25.000 € \\
+    Lizenzen, Projekte und Schulungsaufwand bisheriger Systeme & -- & 510.000 € \\
+    Rechenzentrum und Infrastruktur & -- & 190.000 € \\
+    Betrieb und Wartung & -- & 195.000 € \\
+    Datenmanagement und Schnittstellenbetrieb & -- & 75.000 € \\
+    Ausfall- und Qualitätskosten & -- & 25.000 € \\
 
-\midrule
-\textbf{Summe} & \textbf{1.390.500 €} & \textbf{995.000 €} \\
-\bottomrule
-\end{tabular}
+    \midrule
+    \textbf{Summe} & \textbf{1.390.500 €} & \textbf{995.000 €} \\
+    \bottomrule
+  \end{tabularx}
 \end{table}
 
 Die zusätzliche Belastung aus Plattformbetrieb beträgt damit

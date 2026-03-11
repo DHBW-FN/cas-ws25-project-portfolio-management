@@ -6,24 +6,31 @@ Im Folgenden Abschnitt werden die zentralen administrativen Prozesse und Pläne 
 
 Ein effektiver Kommunikationsplan ist essenziell, um die Erwartungen der Stakeholder zu steuern und sicherzustellen, dass die richtigen Informationen zur richtigen Zeit an die richtigen Empfänger gelangen. Der folgende Plan basiert auf der Stakeholderanalyse (siehe \ref{chap:stakeholder}) und definiert die Informationsbedarfe sowie die Verteilungsmechanismen während der Projektlaufzeit.
 
-\begin{table}[h!]
-    \centering
-    \caption{Projektkommunikationsplan nach Stakeholder-Gruppen}
-    \label{tab:kommunikationsplan}
-    \footnotesize
-    \begin{tabular}{p{2.8cm} p{3.2cm} p{2.8cm} p{2cm} p{2.2cm}}
-        \hline
-        \textbf{Stakeholder}            & \textbf{Informationsbedarf}                                          & \textbf{Berichtstyp / Metrik}                  & \textbf{Frequenz} & \textbf{Medium / Format} \\ \hline
-        Vorstand Personal (\acs{CHRO})  & Erreichung des \acs{MOV}, strategische Ausrichtung, Budgetstatus     & Project Summary Report (\acs{KPI}s, \acs{NPV}) & Monatlich         & Präsentation (Lenkungsgremium)       \\
-        \acs{HR} Development Leitung    & Projektfortschritt, Anforderungsstatus, Lernstrategie-Fit            & Statusbericht (Meilensteine, Scope)            & Zweiwöchentlich    & Statusmeeting            \\
-        \acs{IT}-Leitung / System Owner & Systemintegration, Schnittstellenstabilität, technische Governance   & Technischer Statusbericht                      & Monatlich         & E-Mail / Dashboard       \\
-        Enterprise Architecture         & Einhaltung von Standards \& Architektur-Vorgaben                     & Architecture Review Report                     & Quartalsweise     & Review-Meeting           \\
-        Betriebsrat                     & Datenschutzkonformität, Verarbeitungsverzeichnisse                   & Compliance Update / Protokolle                 & Monatlich         & Sitzung / Dokument       \\
-        \acs{HR} Business Partner       & Rollout-Zeitplan in den Ländern, Prozessanpassungen                  & Rollout-Readiness Report                       & Monatlich         & Videokonferenz           \\
-        Mitarbeitende (Endnutzer)       & Nutzen der Plattform („\ac{WIIFM}"), Starttermine, Schulungsangebote & Change-Kommunikation / Release-Notes           & Ereignisbasiert   & Newsletter / Intranet    \\
-        \acs{IT} Operations             & Betriebskonzept, Supportstrukturen, Monitoring-\acs{KPI}s            & Operations Manual / Service-Metriken           & In Phase 5/6      & Wiki / MS Teams          \\ \hline
-    \end{tabular}
-\end{table}
+{\footnotesize
+\begin{xltabular}{\textwidth}{@{}>{\hsize=0.833\hsize}X>{\hsize=1.667\hsize}X>{\hsize=0.833\hsize}X>{\hsize=0.833\hsize}X>{\hsize=0.833\hsize}X@{}}
+    \caption{Projektkommunikationsplan nach Stakeholder-Gruppen} \label{tab:kommunikationsplan} \\
+    \hline
+    \textbf{Stakeholder} & \textbf{Informationsbedarf} & \textbf{Berichtstyp / Metrik} & \textbf{Frequenz} & \textbf{Medium / Format} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Stakeholder} & \textbf{Informationsbedarf} & \textbf{Berichtstyp / Metrik} & \textbf{Frequenz} & \textbf{Medium / Format} \\
+    \hline
+    \endhead
+
+    \hline
+    \endfoot
+
+    Vorstand Personal (\acs{CHRO})  & Erreichung des \acs{MOV}, strategische Ausrichtung, Budgetstatus     & Project Summary Report (\acs{KPI}s, \acs{NPV}) & Monatlich         & Präsentation (Lenkungsgremium)       \\
+    \acs{HR} Development Leitung    & Projektfortschritt, Anforderungsstatus, Lernstrategie-Fit            & Statusbericht (Meilensteine, Scope)            & Zweiwöchentlich    & Statusmeeting            \\
+    \acs{IT}-Leitung / System Owner & Systemintegration, Schnittstellenstabilität, technische Governance   & Technischer Statusbericht                      & Monatlich         & E-Mail / Dashboard       \\
+    Enterprise Architecture         & Einhaltung von Standards \& Architektur-Vorgaben                     & Architecture Review Report                     & Quartalsweise     & Review-Meeting           \\
+    Betriebsrat                     & Datenschutzkonformität, Verarbeitungsverzeichnisse                   & Compliance Update / Protokolle                 & Monatlich         & Sitzung / Dokument       \\
+    \acs{HR} Business Partner       & Rollout-Zeitplan in den Ländern, Prozessanpassungen                  & Rollout-Readiness Report                       & Monatlich         & Videokonferenz           \\
+    Mitarbeitende (Endnutzer)       & Nutzen der Plattform („\ac{WIIFM}"), Starttermine, Schulungsangebote & Change-Kommunikation / Release-Notes           & Ereignisbasiert   & Newsletter / Intranet    \\
+    \acs{IT} Operations             & Betriebskonzept, Supportstrukturen, Monitoring-\acs{KPI}s            & Operations Manual / Service-Metriken           & In Phase 5/6      & Wiki / MS Teams          \\
+\end{xltabular}}
 
 \subsection{Berichtsformen und Metriken}
 Zur Überwachung des Projekts werden primär folgende Berichtsformen eingesetzt:

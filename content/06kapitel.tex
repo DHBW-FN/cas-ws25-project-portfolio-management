@@ -65,27 +65,31 @@ Zur Steuerung des Projekts wurden zentrale Meilensteine definiert. Diese bilden
 wesentliche Abschluss- und Entscheidungszeitpunkte ab und strukturieren das
 Projekt entlang der Hauptphasen.
 
-\begin{table}[H]
-    \centering
-    \caption{Zentrale Meilensteine des Projekts}
-    \label{tab:meilensteine}
-    \renewcommand{\arraystretch}{1.2}
-    \begin{tabularx}{\textwidth}{@{}p{3.8cm}p{2.8cm}X@{}}
-        \toprule
-        \textbf{Meilenstein}                                  & \textbf{Datum} & \textbf{Bedeutung}                                                                                                            \\
-        \midrule
-        Projektstart                                          & 15.04.2026     & Formeller Start des Projekts nach Abschluss der initialen Projektdefinition und des Stakeholder Alignments.                   \\
-        Architekturdesign abgeschlossen                       & 02.06.2026     & Abschluss der inhaltlichen Architekturarbeiten inklusive Zielarchitektur, Infrastruktur-, Integrations- und Reportingkonzept. \\
-        Architekturfreigabe                                   & 02.06.2026     & Formelle Freigabe der Architektur als Voraussetzung für die nachgelagerte Systemkonfiguration und Integration.                \\
-        Systemintegration abgeschlossen                       & 30.07.2026     & Abschluss der technischen Implementierung, Systemkonfiguration, Integrationen, Datenmigration und Reporting-Implementierung.  \\
-        System bereit für Testphase                           & 30.07.2026     & Übergang aus der Implementierungsphase in die strukturierte Test- und Qualitätssicherung.                                     \\
-        Formale Freigabe des Systems für den Produktivbetrieb & 23.09.2026     & Ergebnis der Test- und Abnahmephase; das System ist für Pilotierung und produktiven Einsatz freigegeben.                      \\
-        Rollout-Entscheidung (Go/No-Go)                       & 09.11.2026     & Entscheidungspunkt nach Pilotbetrieb und Readiness-Check für den konzernweiten Rollout.                                       \\
-        Rollout in allen Ländern                              & 09.12.2026     & Abschluss des konzernweiten Rollouts und erfolgreiche Aktivierung der Ländergruppen.                                          \\
-        Projektabschluss                                      & 28.01.2027     & Formeller Abschluss des Projekts nach Stabilisierung, Dokumentation, Übergabe und Abschlussbericht.                           \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
+\begin{xltabular}{\textwidth}{@{}>{\hsize=0.5\hsize}Xc>{\hsize=1.5\hsize}X@{}}
+    \caption{Zentrale Meilensteine des Projekts} \label{tab:meilensteine} \\
+    \toprule
+    \textbf{Meilenstein} & \textbf{Datum} & \textbf{Bedeutung} \\
+    \midrule
+    \endfirsthead
+
+    \toprule
+    \textbf{Meilenstein} & \textbf{Datum} & \textbf{Bedeutung} \\
+    \midrule
+    \endhead
+
+    \bottomrule
+    \endfoot
+
+    Projektstart                                          & 15.04.2026     & Formeller Start des Projekts nach Abschluss der initialen Projektdefinition und des Stakeholder Alignments.                   \\
+    Architekturdesign abgeschlossen                       & 02.06.2026     & Abschluss der inhaltlichen Architekturarbeiten inklusive Zielarchitektur, Infrastruktur-, Integrations- und Reportingkonzept. \\
+    Architekturfreigabe                                   & 02.06.2026     & Formelle Freigabe der Architektur als Voraussetzung für die nachgelagerte Systemkonfiguration und Integration.                \\
+    Systemintegration abgeschlossen                       & 30.07.2026     & Abschluss der technischen Implementierung, Systemkonfiguration, Integrationen, Datenmigration und Reporting-Implementierung.  \\
+    System bereit für Testphase                           & 30.07.2026     & Übergang aus der Implementierungsphase in die strukturierte Test- und Qualitätssicherung.                                     \\
+    Formale Freigabe des Systems für den Produktivbetrieb & 23.09.2026     & Ergebnis der Test- und Abnahmephase; das System ist für Pilotierung und produktiven Einsatz freigegeben.                      \\
+    Rollout-Entscheidung (Go/No-Go)                       & 09.11.2026     & Entscheidungspunkt nach Pilotbetrieb und Readiness-Check für den konzernweiten Rollout.                                       \\
+    Rollout in allen Ländern                              & 09.12.2026     & Abschluss des konzernweiten Rollouts und erfolgreiche Aktivierung der Ländergruppen.                                          \\
+    Projektabschluss                                      & 28.01.2027     & Formeller Abschluss des Projekts nach Stabilisierung, Dokumentation, Übergabe und Abschlussbericht.                           \\
+\end{xltabular}
 
 \section{Probabilistische Terminbetrachtung mit \ac{PERT}}
 
@@ -117,25 +121,29 @@ Die Varianz eines Vorgangs ergibt sich zu:
 Auf Basis der \ac{PERT}-Auswertung für den kritischen Pfad ergeben sich für das
 Projekt die in Tabelle~\ref{tab:pert-auswertung} dargestellten Kennzahlen.
 
-\begin{table}[H]
-    \centering
-    \caption{Ergebnisse der \ac{PERT}-Analyse}
-    \label{tab:pert-auswertung}
-    \renewcommand{\arraystretch}{1.2}
-    \begin{tabular}{@{}lr@{}}
-        \toprule
-        \textbf{Kennzahl}                                        & \textbf{Wert}    \\
-        \midrule
-        Anzahl kritischer Vorgänge                               & 82               \\
-        Gesamterwartungswert der Projektdauer                    & 223{,}00 Tage    \\
-        Gesamtvarianz                                            & 41{,}72 Tage$^2$ \\
-        Projektstandardabweichung                                & 6{,}46 Tage      \\
-        Zieldauer                                                & 230{,}00 Tage    \\
-        Z-Wert                                                   & 1{,}0837         \\
-        Eintrittswahrscheinlichkeit für Einhaltung der Zieldauer & 86{,}0\,\%       \\
-        \bottomrule
-    \end{tabular}
-\end{table}
+\begin{xltabular}{\textwidth}{@{}lc@{}}
+    \caption{Ergebnisse der \ac{PERT}-Analyse} \label{tab:pert-auswertung} \\
+    \toprule
+    \textbf{Kennzahl} & \textbf{Wert} \\
+    \midrule
+    \endfirsthead
+
+    \toprule
+    \textbf{Kennzahl} & \textbf{Wert} \\
+    \midrule
+    \endhead
+
+    \bottomrule
+    \endfoot
+
+    Anzahl kritischer Vorgänge                               & 82               \\
+    Gesamterwartungswert der Projektdauer                    & 223{,}00 Tage    \\
+    Gesamtvarianz                                            & 41{,}72 Tage$^2$ \\
+    Projektstandardabweichung                                & 6{,}46 Tage      \\
+    Zieldauer                                                & 230{,}00 Tage    \\
+    Z-Wert                                                   & 1{,}0837         \\
+    Eintrittswahrscheinlichkeit für Einhaltung der Zieldauer & 86{,}0\,\%       \\
+\end{xltabular}
 
 Die Auswertung zeigt, dass die erwartete Projektdauer des kritischen Pfads bei
 \textbf{223 Tagen} liegt. Bei einer geplanten Zieldauer von
