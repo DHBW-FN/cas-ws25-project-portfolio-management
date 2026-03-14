@@ -142,6 +142,64 @@ Während des Projektverlaufs werden systematisch Erkenntnisse gesammelt und ausg
     \item regelmäßige Projektretrospektiven im Projektteam
     \item Dokumentation von Lessons Learned im Projektabschluss
 \end{itemize}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+    line/.style={thick},
+    cause/.style={font=\footnotesize, anchor=west},
+    cause/.style={font=\tiny, anchor=west},
+    category/.style={font=\bfseries}
+]
+
+% Hauptlinie
+\draw[line] (0,0) -- (11.8,0);
+
+% Ergebnisbox
+\draw (11.8,-0.6) rectangle (16,0.6);
+\node at (13.9,0.18) {\textbf{Qualitätsprobleme}};
+\node at (13.9,-0.18) {\textbf{Lernplattform}};
+
+% Kategorien (oben)
+\draw[line] (4,0) -- (3,1.5);
+\node[category] at (1.8,1.85) {\textbf{Menschen}};
+
+\draw[line] (7.5,0) -- (6.5,1.5);
+\node[category] at (5.4,1.85) {\textbf{Prozesse}};
+
+\draw[line] (11,0) -- (10,1.5);
+\node[category] at (9.0,1.85) {\textbf{Technologie}};
+
+% Kategorien (unten)
+\draw[line] (7.5,0) -- (6.5,-1.5);
+\node[category] at (5.5,-1.85) {\textbf{Daten}};
+
+\draw[line] (11,0) -- (10,-1.5);
+\node[category] at (9.0,-1.85) {\textbf{Organisation}};
+
+% Ursachen Menschen
+\node[cause] at (0.7,1.00) {fehlende Schulungen};
+\node[cause] at (0.0,0.55) {unzureichende Testkompetenz};
+
+% Ursachen Prozesse
+\node[cause] at (3.9,1.00) {unklare Testprozesse};
+\node[cause] at (3.8,0.55) {fehlende Freigabekriterien};
+
+% Ursachen Technologie
+\node[cause] at (7.3,1.00) {Schnittstellenprobleme};
+\node[cause] at (7.8,0.55) {Performanceprobleme};
+
+% Ursachen Daten
+\node[cause] at (3.9,-0.55) {unvollständige Testdaten};
+\node[cause] at (3.7,-1.00) {inkonsistente Migration};
+
+% Ursachen Organisation
+\node[cause] at (7.5,-0.55) {geringe UAT-Beteiligung};
+\node[cause] at (8.6,-1.00) {Zeitdruck};
+
+\end{tikzpicture}
+\caption{Ishikawa-Diagramm zur Analyse potenzieller Qualitätsprobleme der Lernplattform}
+\label{fig:ishikawa_quality}
+\end{figure}
 
 \section{Change-Management-Plan}
 
