@@ -2,9 +2,17 @@
 Dies ist eine LaTeX-Vorlage, die genutzt werden kann, um Seminar, Studien-, Masterarbeiten oder ähnliches am DHBW CAS mit LaTeX zu verfassen. Die Vorlage basiert auf einer [Vorlage der DHBW Horb](https://github.com/dhbw-horb/latexVorlage) und wurde etwas angepasst, um den Richtlinien des DHBW CAS (bzw. dem dortigen Fachbereich Technik; Stand August 2022) zu entsprechen. Dies ist keine offizielle Vorlage des DHBW CAS, daher erfolgt die Verwendung natürlich auf eigene Gefahr.
 
 # GitHub Actions
-Eine Vorschau, wie ein Dokument unter Verwendung dieser Vorlage aussieht (ohne es selbst bauen zu müssen), kann unter den [GitHub-Actions](https://github.com/maxkde/latextemplate-dhbwcas/actions) für dieses Repository angeschaut werden. Den neuesten Eintrag dort anklicken und das Artefakt `documentation-paper` herunterladen, darin liegt dann die `dokumentation.pdf`.
+Releases werden automatisch gebaut und veröffentlicht, sobald ein Versions-Tag gepusht wird.
 
-Diese über GitHub Actions erzeugte PDF wird nach jedem Pushen immer neu und 'sauber' erstellt - das PDF darin eignet sich also sehr gut für die letztliche Abgabe. Wer auf die Installation von Perl und ähnlichem Kruscht (siehe unten), wie es z.B. für die Erzeugung des Glossars nötig ist, verzichten will, hat in Form der GitHub Actions ebenfalls eine Lösung gefunden. Dafür einfach dieses Template zum Initialisieren eines eigenen Repositories nutzen und dann darin arbeiten.
+1. Tag erstellen und pushen (z.B. `v1.0.0`):
+   ```bash
+   git tag v1.0.0
+   git push origin v1.0.0
+   ```
+2. Der Workflow läuft für jeden Tag, der auf `v*` passt (z.B. `v1.0.0`, `v2.1.3`).
+3. In einem [TeX Live](https://hub.docker.com/r/texlive/texlive)-Container wird `latexmk` ausgeführt und `output/dokumentation.pdf` als Asset an ein GitHub Release gehängt. Die Release Notes werden aus den Commits erzeugt.
+
+Das Release muss nicht vorher in der GitHub-Oberfläche angelegt werden. Tag pushen reicht.
 
 # Vorlage verwenden und anpassen
 Pflichtangaben und einigen weitere Einstellungen können in `einstellungen.tex` geändert werden. Kapitel werden in `content` nach dem Schema `<nn>kapitel.tex` angelegt, wobei &lt;nn&gt; eine mindestens zweistellige Zahl sein muss. Das Logo der Firma kann durch das Ersetzen der Datei `images/fima-deckblatt.png` geändert werden. Die Größe des Bildes ändert man durch das Verkleinern/Vergrößern der Datei.
